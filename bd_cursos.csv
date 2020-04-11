@@ -1,16 +1,16 @@
-"Curso", "Aluno", "Nivel", "Ano"
-"Ciencia da Computacao", "aluno0", "Graduaçao", "1"
-"Ciencia da Computacao", "aluno1", "Graduaçao", "1"
-"Ciencia da Computacao", "aluno2", "Graduaçao", "2"
-"Ciencia da Computacao", "aluno3", "Graduaçao", "2"
-"Ciencia da Computacao", "aluno4", "Graduaçao", "3"
-"Ciencia da Computacao", "aluno5", "Graduaçao", "4"
-"Ciencia da Computacao", "aluno6", "Doutorado", "2"
-"Fisica", "aluno7", "Graduaçao", "1"
-"Fisica", "aluno8", "Graduaçao", "1"
-"Fisica", "aluno9", "Graduaçao", "2"
-"Fisica", "aluno10", "Graduaçao", "2"
-"Fisica", "aluno11", "Graduaçao", "3"
-"Fisica", "aluno12", "Graduaçao", "4"
-"Fisica", "aluno13", "Graduaçao", "4"
-"Fisica", "aluno14", "Mestrado", "1"
+Curso,Aluno,Nivel,Ano
+Matematica,aluno0,Graduaçao,1
+Matematica,aluno1,Graduaçao,1
+Matematica,aluno2,Graduaçao,2
+Matematica,aluno3,Graduaçao,2
+Matematica,aluno4,Graduaçao,3
+Matematica,aluno5,Graduaçao,4
+Matematica,aluno6,Doutorado,2
+Fisica,aluno7,Graduaçao,1
+Fisica,aluno8,Graduaçao,1
+Fisica,aluno9,Graduaçao,2
+Fisica,aluno10,Graduaçao,2
+Fisica,aluno11,Graduaçao,3
+Fisica,aluno12,Graduaçao,4
+Fisica,aluno13,Graduaçao,4
+Fisica,aluno14,Mestrado,1
