@@ -9,9 +9,9 @@ public class Menu {
     public static void main(String[] args) {
         String nome;
         int RA;
-        int option;
 
         Scanner unip = new Scanner(System.in);
+        Sistema user = new Sistema();
 
         System.out.println("Digite seu nome: ");
         nome = unip.nextLine();
@@ -35,16 +35,16 @@ public class Menu {
 
         switch (opcao) {
         case notas:
-            System.out.println("notas");
+            user.notas();
             break;
         case alunos:
-            System.out.println("alunos");
+            user.alunos();
             break;
         case cursos:
-            System.out.println("cursos");
+            user.cursos();
             break;
         case artigos:
-            System.out.println("artigos");
+            user.artigos();
             break;
         default:
             System.out.println("Opcao invalida");
