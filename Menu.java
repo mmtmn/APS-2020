@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Menu {
     public final static int notas = 1;
@@ -18,15 +20,26 @@ public class Menu {
         System.out.println("4 - artigos");
 
         System.out.println("Digite a opcao desejada: ");
-
         int opcao = scn.nextInt();
+
+        String fileName = "bd_alunos.csv";
+        File file = new File(fileName);
 
         switch (opcao) {
         case notas:
             user.notas();
             break;
         case alunos:
-            user.alunos();
+            try {
+                Scanner inputStream = new Scanner(file);
+                while(inputStream.hasNext()){
+                    String data = inputStream.next();
+                    System.out.println(data);
+                }
+                inputStream.close();
+            } catch (FileNotFoundException e)  {
+                e.printStackTrace();
+            }
             break;
         case cursos:
             user.cursos();
