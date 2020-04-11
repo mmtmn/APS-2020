@@ -30,7 +30,7 @@ public class Menu {
 
         switch (opcao) {
         case notas:
-            user.notas();
+            System.out.println("Under Construction")
             break;
         case alunos:
             try {
@@ -57,7 +57,7 @@ public class Menu {
             }
             break;
         case artigos:
-            user.artigos();
+            System.out.println("Under construction")
             break;
         default:
             System.out.println("Opcao invalida");
