@@ -20,7 +20,7 @@ public class Menu {
         RA = unip.nextInt();
 
         System.out.println("Bem-vindo " + nome);
-        System.out.println("Voce nasceu em: " + RA);
+        System.out.println("Seu RA é: " + RA);
         
 
         System.out.println("Menu Principal");
