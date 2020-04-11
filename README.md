@@ -19,9 +19,11 @@ As Atividades Práticas Supervisionadas serão constituídas pelos seguintes tó
 
 
 Para rodar o projeto:
+
 `git clone`
+
 `javac Menu.java`
+
 `javac Metodos.java`
+
 `java Menu`
-
-
