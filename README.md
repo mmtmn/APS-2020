@@ -27,3 +27,11 @@ Para rodar o projeto:
 `javac Metodos.java`
 
 `java Menu`
+
+Para rodar o manipulador de csv, faça o seguinte:
+
+`javac CSVReader.java`
+
+`java CSVReader`
+
+Esse CSVReader esta contrução no momento
