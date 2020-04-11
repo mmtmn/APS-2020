@@ -10,14 +10,14 @@ public class Menu {
         String nome;
         int RA;
 
-        Scanner unip = new Scanner(System.in);
-        Sistema user = new Sistema();
+        Scanner scn = new Scanner(System.in);
+        Metodos user = new Metodos();
 
         System.out.println("Digite seu nome: ");
-        nome = unip.nextLine();
+        nome = scn.nextLine();
 
         System.out.println("Digite o seu RA: ");
-        RA = unip.nextInt();
+        RA = scn.nextInt();
 
         System.out.println("Bem-vindo " + nome);
         System.out.println("Seu RA é: " + RA);
@@ -31,7 +31,7 @@ public class Menu {
 
         System.out.println("Digite a opcao desejada: ");
 
-        int opcao = unip.nextInt();
+        int opcao = scn.nextInt();
 
         switch (opcao) {
         case notas:
