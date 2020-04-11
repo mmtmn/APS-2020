@@ -25,6 +25,9 @@ public class Menu {
         String fileName = "bd_alunos.csv";
         File file = new File(fileName);
 
+        String fileName2 = "bd_cursos.csv";
+        File file2 = new File(fileName2);
+
         switch (opcao) {
         case notas:
             user.notas();
@@ -42,7 +45,16 @@ public class Menu {
             }
             break;
         case cursos:
-            user.cursos();
+            try {
+                Scanner inputStream = new Scanner(file2);
+                while(inputStream.hasNext()){
+                    String data = inputStream.next();
+                    System.out.println(data);
+                }
+                inputStream.close();
+            } catch (FileNotFoundException e)  {
+                e.printStackTrace();
+            }
             break;
         case artigos:
             user.artigos();
