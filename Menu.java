@@ -7,8 +7,8 @@ public class Menu {
     public final static int alunos = 2;
     public final static int cursos = 3;
     public final static int artigos = 4;
-    public final static int Matematica = 5;
-    public final static int Fisica = 6;
+    public final static int Matematica = 1;
+    public final static int Fisica = 2;
 
     public static void main(String[] args) {
 
@@ -53,8 +53,8 @@ public class Menu {
             break;
         case cursos:
             System.out.println("Menu dos Cursos");
-            System.out.println("5 - Matematica");
-            System.out.println("6 - Fisica");
+            System.out.println("1 - Matematica");
+            System.out.println("2 - Fisica");
 
             System.out.println("Digite a opcao desejada: ");
             int option= scn.nextInt();
