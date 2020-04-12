@@ -14,6 +14,8 @@ public class Menu {
 
         Scanner scn = new Scanner(System.in);
         while(true) {
+            System.out.println();
+            System.out.println();
             System.out.println("Menu Principal");
             System.out.println("1 - notas");
             System.out.println("2 - alunos");
@@ -87,7 +89,17 @@ public class Menu {
                 }
                 break;
             case artigos:
-                System.out.println("Under construction");
+                System.out.println("Lista de artigos disponiveis na Universidade Amazonias:");
+                System.out.println();
+                System.out.println("Signal processing of power quality disturbances");
+                System.out.println("Understanding power quality problems");
+                System.out.println("PNF in practice: an illustrated guide");
+                System.out.println("Noninvasive diagnosis of deep venous thrombosis");
+                System.out.println("Integration of distributed generation in the power system");
+                System.out.println("Zinc metabolism in the brain: relevance to human neurodegenerative disorders");
+                System.out.println("Tissue-specific expression of a splicing mutation in the IKBKAP gene causes familial dysautonomia");
+                System.out.println("Operation of restructured power systems");
+                System.out.println("Feasibility of a DC network for commercial facilities");
                 break;
             default:
                 System.out.println("Opcao invalida");
