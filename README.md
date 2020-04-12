@@ -1,4 +1,4 @@
-As Atividades Práticas Supervisionadas serão constituídas pelos seguintes tópicos:
+2As Atividades Práticas Supervisionadas serão constituídas pelos seguintes tópicos:
 
 1)	O grupo deverá desenvolver um sistema para gerenciamento da Univerdade “Amazônia”, responsável por pesquisar desenvolver artigos científicos e livros relacionados à ciência e ao meio ambiente.
 
