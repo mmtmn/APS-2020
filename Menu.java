@@ -21,6 +21,8 @@ public class Menu {
             System.out.println("2 - alunos");
             System.out.println("3 - cursos");
             System.out.println("4 - artigos");
+            System.out.println("Para sair, ctrl+C");
+            System.out.println();
 
             System.out.println("Digite a opcao desejada: ");
             int opcao = scn.nextInt();
