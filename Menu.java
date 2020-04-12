@@ -111,3 +111,8 @@ public class Menu {
     }
     
 }
+
+
+//Precisa entender como receber os espaços entre os nomes do banco de dados
+//Precisa reestruturar a lógica do menu
+//Precisa criar o filtro
