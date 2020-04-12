@@ -27,10 +27,10 @@ public class Menu {
             System.out.println("Digite a opcao desejada: ");
             int opcao = scn.nextInt();
 
-            String fileName = "bd_alunos.csv";
+            String fileName = "Database/alunos.csv";
             File file = new File(fileName);
 
-            String fileName2 = "bd_cursos.csv";
+            String fileName2 = "Database/cursos.csv";
             File file2 = new File(fileName2);
 
             String fileName3 = "bd_matematica.csv";
