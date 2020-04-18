@@ -19,7 +19,7 @@ public class Tabela {
 	}
 	
 	public void imprimirDados() {
-		System.out.println("ID da disciplina: " + this.id);
+		System.out.println("ID: " + this.id);
 		System.out.println("Nome: " + this.nome);
 	}
 	
