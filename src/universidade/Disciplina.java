@@ -1,19 +1,18 @@
 package universidade;
 
-public class Disciplina {
-	int id;
-	String nome;
-	Curso curso;
+public class Disciplina extends Tabela {
+
+	private Curso curso;
 	
-	public Disciplina(int idC, String nomeC, Curso cursoC) {
-		id = idC;
-		nome = nomeC;
-		curso = cursoC;
+	public Disciplina(int id, String nome, Curso curso) {
+		super(id, nome);
+		this.curso = curso;
 	}
 	
 	public void imprimirDados() {
-		System.out.println("ID da disciplina: " + id);
-		System.out.println("Nome: " + nome);
-		System.out.println("Curso: " + curso.nome);
+		System.out.println("ID da disciplina: " + this.getId());
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Curso: " + this.curso.getNome());
 	}
+	
 }

@@ -38,6 +38,7 @@ public class Database {
 		String [] dados = search("disciplina", "nome", q);
 		return (new Disciplina(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
 	}
+
 	
 	public Nota searchNotaById(String q) {
 		String [] dados = search("nota", "id", q);
@@ -51,44 +52,34 @@ public class Database {
 				searchAlunoById(dados[7])));
 	}
 	
-	private String[] search(String what, String by, String q) {
+	private String[] search(String tabela, String coluna, String q) {
+			
+		File file = new File("database/" + tabela + ".csv");
+		Scanner inputStream;
 		
-		String fileName = "";
-		
-		if (what.equals("aluno")) {
-			fileName = "database/alunos.csv";
-		} else if (what.equals("curso")) {
-			fileName = "database/cursos.csv";
-		} else if (what.equals("disciplina")) {
-			fileName = "database/disciplinas.csv";
-		} else if (what.equals("nota")) {
-			fileName = "database/notas.csv";
-		}
-		
-		File file = new File(fileName);
-	
 		try {
-			Scanner inputStream = new Scanner(file);
+			
+			inputStream = new Scanner(file);
+			
 			while (inputStream.hasNext()) {
 				
 				String data = inputStream.nextLine();
 				String[] dados = data.split(",");
 				
-				if (by.equals("id")) {
+				if (coluna.equals("id")) {
 					if (dados[0].contentEquals(q)) {
 						return (dados);
 					}
-				}else if (by.equals("nome")) {
+				}else if (coluna.equals("nome")) {
 					if (dados[1].contentEquals(q)) {
 						return (dados);
 					}
 				}
-			}
-			inputStream.close();	
+			}	
+			inputStream.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
 		
 		return null;
 	}

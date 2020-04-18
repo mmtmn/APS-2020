@@ -1,20 +1,18 @@
 package universidade;
 
 
-public class Curso {
-	int id;
-	String nome;
-	String nivel;
+public class Curso extends Tabela {
+	private String nivel;
 	
-	public Curso(int idC, String nomeC, String nivelC) {
-		id = idC;
-		nome = nomeC;
-		nivel = nivelC;
+	public Curso(int id, String nome, String nivel) {
+    	super(id, nome);
+		this.nivel = nivel;
 	}
-	
+
 	public void imprimirDados() {
-		System.out.println("ID do curso: " + id);
-		System.out.println("Nome: " + nome);
-		System.out.println("Nível: " + nivel);
+		System.out.println("Id do curso: " + this.getId());
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Nível: " + this.nivel);
 	}
+
 }

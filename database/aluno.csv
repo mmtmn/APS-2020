@@ -1,0 +1,701 @@
+cod_aluno,nome,cod_curso
+0,Fernanda Lima,35
+1,Ana Clara Barros,26
+2,Benício Lima,34
+3,Carlos Eduardo Campos,37
+4,Arthur Henrique Carvalho,38
+5,Lorenzo Mendes,8
+6,Maria Flor Ribeiro,4
+7,Nicolas Almeida,23
+8,Ana Liz Carvalho,10
+9,Antonella Fernandes,16
+10,Vicente Monteiro,23
+11,Laís Rodrigues,28
+12,Miguel Henrique Campos,4
+13,Ana Laura Costa,21
+14,Maria Alice Campos,29
+15,Catarina Monteiro,30
+16,Liz Silva,29
+17,Felipe Barros,31
+18,Erick Araújo,4
+19,Kaique Lima,15
+20,Heitor Ribeiro,5
+21,Maria Helena Nascimento,30
+22,Ana Luiza Fernandes,16
+23,Maria Júlia Monteiro,25
+24,Daniel Castro,21
+25,Carolina Pinto,11
+26,Maria Vitória Castro,27
+27,João Victor Pereira,29
+28,Maria Luiza Ribeiro,20
+29,Eloá Monteiro,18
+30,Pedro Henrique Ribeiro,1
+31,Enzo Gabriel Araújo,16
+32,Bianca Santos,33
+33,Maya Oliveira,6
+34,Martin Mendes,17
+35,Vitória Barbosa,23
+36,Luana Souza,23
+37,Gabriel Carvalho,26
+38,Maria Fernanda Dias,12
+39,João Miguel Pereira,6
+40,Eduarda Silva,10
+41,Augusto Gomes,36
+42,Gabrielly Almeida,32
+43,Eduardo Dias,1
+44,Milena Campos,10
+45,Lucas Gabriel Campos,7
+46,Maria Sophia Lima,26
+47,Miguel Santos,32
+48,Rafaela Araújo,20
+49,Maria Laura Moura,2
+50,Isabel Carvalho,17
+51,Clara Pereira,2
+52,Otávio Freitas,42
+53,Levi Alves,19
+54,João Gabriel Costa,10
+55,Noah Oliveira,30
+56,Luiza Barros,40
+57,Pietro Cavalcanti,23
+58,Arthur Gabriel Fernandes,11
+59,Nathan Gomes,13
+60,Agatha Castro,30
+61,Bernardo Dias,6
+62,Maria Martins,16
+63,Caio Gomes,1
+64,Laura Carvalho,17
+65,Amanda Silva,30
+66,Théo Nascimento,31
+67,Lorena Lima,34
+68,Caleb Rocha,25
+69,Anthony Nascimento,1
+70,Alícia Araújo,7
+71,Heloísa Ribeiro,32
+72,Ana Beatriz Gomes,7
+73,Vinícius Souza,0
+74,Júlia Carvalho,32
+75,Kauê Gomes,26
+76,Victor Silva,37
+77,Beatriz Oliveira,7
+78,Danilo Carvalho,3
+79,Larissa Gomes,0
+80,Melissa Nascimento,19
+81,Raul Rocha,18
+82,Stella Rodrigues,28
+83,Joaquim Lima,32
+84,Guilherme Castro,9
+85,Pedro Araújo,2
+86,Ayla Almeida,17
+87,Lara Fernandes,29
+88,Thiago Pereira,22
+89,Pedro Miguel Dias,36
+90,Bento Freitas,17
+91,Maria Valentina Alves,5
+92,Allana Costa,29
+93,Isabella Pinto,4
+94,Ana Campos,21
+95,Joana Pinto,40
+96,Maitê Freitas,30
+97,Thomas Pinto,26
+98,Henry Cardoso,8
+99,Benjamin Silva,34
+100,Esther Cardoso,22
+101,Luiz Felipe Araújo,21
+102,Luna Freitas,31
+103,Olívia Nascimento,27
+104,Luiz Otávio Pinto,42
+105,Mirella Barbosa,42
+106,Isaac Dias,0
+107,Ruan Martins,9
+108,Anthony Gabriel Cavalcanti,29
+109,Bryan Martins,41
+110,Leonardo Barbosa,7
+111,Lavínia Almeida,33
+112,Sophia Silva,35
+113,Ana Júlia Pinto,17
+114,Gabriela Carvalho,17
+115,Gustavo Mendes,1
+116,Isabelly Araújo,26
+117,Sophie Rocha,9
+118,Arthur Miguel Oliveira,7
+119,Luan Pinto,21
+120,Henrique Barros,28
+121,Cecília Cardoso,25
+122,Davi Lima,33
+123,Emanuel Campos,37
+124,Enzo Miguel Barros,33
+125,Lucas Rocha,25
+126,Yago Pereira,21
+127,Rodrigo Lima,40
+128,Sarah Ribeiro,41
+129,Heloise Almeida,40
+130,Yuri Cavalcanti,19
+131,Ana Lívia Nascimento,12
+132,André Gomes,16
+133,Fernando Martins,29
+134,Manuela Souza,28
+135,Helena Martins,28
+136,Ryan Barbosa,9
+137,Maria Heloísa Rodrigues,11
+138,Maria Clara Monteiro,0
+139,Enzo Pinto,26
+140,Aurora Silva,5
+141,Francisco Araújo,24
+142,Isis Santos,18
+143,Maria Cecília Oliveira,10
+144,Marina Cardoso,8
+145,Analu Gomes,5
+146,Ana Cecília Oliveira,8
+147,Davi Miguel Freitas,23
+148,José Santos,22
+149,Louise Nascimento,35
+150,Pietra Costa,8
+151,João Lucas Ribeiro,22
+152,Davi Luiz Gomes,5
+153,Elisa Cardoso,25
+154,Breno Araújo,16
+155,Enrico Souza,40
+156,Yasmin Santos,40
+157,Gael Silva,11
+158,João Pedro Castro,24
+159,Maria Eduarda Fernandes,7
+160,Luiz Miguel Monteiro,3
+161,Mariah Oliveira,9
+162,Victor Hugo Costa,6
+163,Samuel Cardoso,2
+164,João Dias,30
+165,Tomás Araújo,24
+166,Cauã Nascimento,30
+167,Lucca Santos,32
+168,Luiz Gustavo Barbosa,6
+169,Bruna Lima,22
+170,Ana Vitória Carvalho,38
+171,Matheus Cardoso,27
+172,Ana Sophia Freitas,8
+173,Nicole Martins,10
+174,Arthur Campos,38
+175,Lívia Cavalcanti,41
+176,Rebeca Alves,12
+177,Mariana Oliveira,37
+178,Emilly Gomes,32
+179,Antônio Cavalcanti,6
+180,Luiz Henrique Pinto,12
+181,Davi Lucas Costa,6
+182,Bruno Monteiro,15
+183,Isadora Rodrigues,30
+184,Pedro Lucas Cardoso,31
+185,Maria Isis Fernandes,7
+186,Giovanna Rodrigues,17
+187,Antônia Dias,13
+188,Valentina Silva,37
+189,Murilo Rodrigues,37
+190,Oliver Freitas,42
+191,João Guilherme Dias,14
+192,Emanuelly Lima,30
+193,Clarice Rodrigues,24
+194,Davi Lucca Campos,11
+195,Letícia Rodrigues,20
+196,Ian Souza,33
+197,Rafael Pinto,28
+198,Malu Pereira,37
+199,Alice Barbosa,26
+200,Ana Beatriz Castro,33
+201,Bianca Freitas,0
+202,Isabella Martins,10
+203,Manuela Santos,29
+204,João Mendes,4
+205,João Lucas Ribeiro,2
+206,Luna Pereira,13
+207,João Guilherme Barros,2
+208,Rebeca Nascimento,5
+209,Maria Flor Souza,4
+210,Théo Almeida,13
+211,Bruno Monteiro,33
+212,Elisa Alves,18
+213,Guilherme Araújo,8
+214,Luiza Pinto,8
+215,Eloá Rodrigues,38
+216,Fernando Martins,29
+217,Luiz Felipe Rocha,20
+218,Davi Luiz Santos,39
+219,Helena Cardoso,41
+220,Sophia Fernandes,12
+221,Cecília Araújo,21
+222,Lavínia Fernandes,4
+223,Marina Castro,12
+224,Antônia Dias,10
+225,Isabelly Ribeiro,15
+226,Gabriela Alves,7
+227,Olívia Alves,41
+228,Yasmin Pereira,29
+229,Rodrigo Rodrigues,39
+230,Lorena Souza,27
+231,Catarina Freitas,26
+232,Otávio Santos,0
+233,Rafael Moura,37
+234,Maria Laura Almeida,16
+235,Isabel Barbosa,33
+236,Gustavo Carvalho,16
+237,Kaique Barros,2
+238,Beatriz Campos,33
+239,Mariana Pinto,3
+240,Maria Heloísa Costa,38
+241,João Lucas Nascimento,5
+242,Pedro Ribeiro,33
+243,Arthur Gabriel Freitas,13
+244,Malu Rodrigues,0
+245,Ana Clara Mendes,9
+246,Luiz Henrique Lima,40
+247,Rafaela Lima,15
+248,Victor Martins,41
+249,Augusto Barbosa,4
+250,Gabrielly Nascimento,3
+251,Davi Lucas Cardoso,27
+252,Lavínia Carvalho,24
+253,Júlia Santos,30
+254,Maria Luiza Cardoso,37
+255,Fernando Campos,24
+256,Fernando Barbosa,2
+257,Stella Pinto,25
+258,Louise Oliveira,5
+259,Ruan Costa,18
+260,Sarah Dias,41
+261,Ana Beatriz Lima,8
+262,Felipe Campos,3
+263,Luiza Monteiro,5
+264,João Rocha,4
+265,Rafaela Almeida,36
+266,Manuela Souza,2
+267,Gael Santos,38
+268,Levi Cavalcanti,31
+269,Thiago Lima,32
+270,Nicole Santos,23
+271,Louise Pereira,32
+272,Lara Silva,15
+273,Marina Oliveira,17
+274,Martin Silva,4
+275,Enrico Souza,6
+276,Enzo Miguel Campos,12
+277,Thomas Cardoso,12
+278,Pedro Almeida,26
+279,Maya Martins,29
+280,Victor Pereira,28
+281,Nicole Barros,40
+282,Fernando Pinto,29
+283,Maria Fernanda Araújo,39
+284,Fernanda Carvalho,35
+285,Sophia Santos,35
+286,Fernanda Fernandes,35
+287,Emilly Martins,30
+288,Milena Ribeiro,6
+289,Alícia Cardoso,0
+290,Pietra Cardoso,10
+291,João Gabriel Mendes,42
+292,Leonardo Costa,30
+293,Pietra Lima,33
+294,Maria Eduarda Dias,31
+295,Gustavo Cardoso,6
+296,Caleb Campos,8
+297,Luiz Felipe Barros,2
+298,Joaquim Moura,28
+299,Clara Costa,28
+300,Erick Martins,15
+301,Olívia Almeida,13
+302,Benício Rodrigues,3
+303,Allana Santos,40
+304,Fernanda Carvalho,42
+305,Maria Helena Ribeiro,28
+306,Maria Clara Ribeiro,1
+307,Ana Laura Rodrigues,2
+308,Maria Cecília Carvalho,24
+309,Isadora Souza,28
+310,Letícia Rocha,17
+311,Enzo Gabriel Cardoso,40
+312,Isabella Carvalho,17
+313,Cauã Rodrigues,5
+314,Felipe Costa,14
+315,Yuri Rodrigues,13
+316,Isis Alves,28
+317,Otávio Castro,33
+318,Mariah Pereira,16
+319,Maria Laura Fernandes,25
+320,Ana Vitória Silva,0
+321,João Miguel Barbosa,13
+322,Luana Cardoso,28
+323,Henrique Campos,40
+324,Letícia Nascimento,6
+325,Sarah Martins,31
+326,Lucas Martins,18
+327,Catarina Dias,27
+328,Benício Alves,6
+329,Levi Almeida,42
+330,Elisa Oliveira,41
+331,Olívia Monteiro,16
+332,Enrico Monteiro,36
+333,Davi Cardoso,17
+334,João Pedro Dias,26
+335,Maria Júlia Rocha,29
+336,Alice Almeida,8
+337,Luiza Freitas,8
+338,Gabriela Dias,6
+339,Pedro Lucas Barbosa,37
+340,Melissa Gomes,16
+341,Caleb Araújo,35
+342,Arthur Henrique Oliveira,42
+343,Enrico Lima,6
+344,Rafaela Souza,15
+345,Davi Luiz Campos,2
+346,Lucas Gabriel Rocha,41
+347,Larissa Moura,42
+348,Gustavo Fernandes,2
+349,Maria Júlia Monteiro,18
+350,Erick Pereira,35
+351,Lucca Gomes,31
+352,Thiago Nascimento,36
+353,Thomas Martins,18
+354,Lara Freitas,37
+355,Enzo Gabriel Carvalho,28
+356,Isabelly Oliveira,19
+357,Ana Laura Alves,4
+358,André Gomes,1
+359,Kaique Mendes,17
+360,Arthur Gabriel Barbosa,40
+361,Yuri Barros,4
+362,Victor Moura,13
+363,Kaique Rocha,14
+364,Antonella Monteiro,15
+365,Ana Cardoso,34
+366,Pedro Lucas Barros,9
+367,Thomas Castro,6
+368,Agatha Oliveira,40
+369,Ana Luiza Cardoso,19
+370,Henry Ribeiro,17
+371,Bruno Barros,24
+372,Bianca Costa,1
+373,Melissa Santos,4
+374,Gabriel Silva,18
+375,Ana Sophia Alves,30
+376,Maria Alice Barros,39
+377,Ana Lívia Rodrigues,37
+378,Cecília Santos,31
+379,Emanuel Barros,15
+380,Antônia Campos,21
+381,Ruan Rocha,22
+382,Arthur Gabriel Castro,1
+383,Ryan Barbosa,6
+384,Maria Valentina Dias,16
+385,Antônia Dias,18
+386,Yago Barros,19
+387,Arthur Miguel Oliveira,18
+388,Breno Cavalcanti,35
+389,Erick Cardoso,5
+390,Heloísa Carvalho,7
+391,Lara Lima,29
+392,Noah Silva,5
+393,Anthony Gabriel Souza,15
+394,Gustavo Costa,8
+395,Ana Luiza Dias,8
+396,Erick Campos,32
+397,Pedro Lucas Gomes,11
+398,Henry Ribeiro,1
+399,Maria Helena Monteiro,29
+400,Raul Souza,24
+401,Maria Isis Silva,3
+402,Ana Clara Costa,40
+403,Enzo Gabriel Fernandes,31
+404,Malu Gomes,22
+405,Caio Rocha,14
+406,Henrique Dias,38
+407,Bryan Araújo,27
+408,Davi Luiz Cardoso,3
+409,Carolina Carvalho,18
+410,Lorena Gomes,15
+411,Kauê Gomes,11
+412,Ryan Mendes,12
+413,Caleb Campos,4
+414,Melissa Souza,19
+415,Ana Cecília Lima,23
+416,Lavínia Martins,15
+417,Caleb Carvalho,21
+418,Heloísa Monteiro,17
+419,Ana Júlia Rocha,34
+420,Emanuelly Barros,14
+421,Murilo Almeida,14
+422,Ana Pereira,18
+423,Ana Luiza Carvalho,5
+424,Bruna Moura,32
+425,Pietro Almeida,13
+426,Bento Barros,37
+427,Pietro Rodrigues,0
+428,Júlia Fernandes,38
+429,Pedro Henrique Moura,35
+430,Gabrielly Alves,32
+431,Maria Valentina Gomes,1
+432,Maria Alice Alves,16
+433,Enrico Pereira,2
+434,Maria Flor Ribeiro,37
+435,Nathan Moura,1
+436,Ana Sophia Araújo,34
+437,Bernardo Fernandes,7
+438,Ana Júlia Costa,5
+439,Rafaela Santos,32
+440,Henrique Cavalcanti,16
+441,Sophia Barbosa,37
+442,Lucas Gabriel Almeida,20
+443,Maria Sophia Nascimento,22
+444,Helena Monteiro,5
+445,João Lucas Gomes,11
+446,Breno Silva,40
+447,Laura Campos,34
+448,Manuela Pereira,1
+449,João Guilherme Castro,16
+450,Fernanda Lima,5
+451,Carolina Oliveira,0
+452,João Souza,28
+453,Ian Ribeiro,12
+454,Lara Moura,3
+455,Esther Souza,0
+456,Ana Luiza Almeida,6
+457,Elisa Cavalcanti,1
+458,Isaac Rocha,39
+459,Pietra Freitas,21
+460,Enrico Silva,7
+461,Enzo Miguel Rocha,22
+462,Ana Luiza Silva,33
+463,Breno Gomes,7
+464,João Victor Cardoso,0
+465,Milena Moura,13
+466,Ana Cecília Cardoso,4
+467,Gabriela Souza,14
+468,Emanuel Cardoso,24
+469,Emanuel Campos,3
+470,Ana Luiza Santos,13
+471,Isadora Dias,26
+472,Agatha Cardoso,28
+473,Arthur Henrique Ribeiro,13
+474,Davi Araújo,2
+475,Eduarda Dias,5
+476,Augusto Monteiro,29
+477,João Gabriel Dias,38
+478,Maria Cecília Fernandes,21
+479,Ana Sophia Santos,16
+480,Maria Luiza Freitas,27
+481,Raul Freitas,21
+482,Carlos Eduardo Martins,24
+483,Lucca Campos,32
+484,Maria Luiza Souza,34
+485,Anthony Barros,15
+486,Felipe Moura,8
+487,Ana Lívia Cavalcanti,21
+488,Levi Costa,31
+489,Antonella Costa,15
+490,Maria Vitória Moura,29
+491,Maria Flor Rocha,42
+492,Mariana Pinto,32
+493,Catarina Pereira,15
+494,Eduardo Araújo,27
+495,Stella Pinto,25
+496,Ayla Araújo,15
+497,Yuri Gomes,4
+498,Maria Isis Castro,42
+499,Heloísa Nascimento,11
+500,Sophia Monteiro,16
+501,Marina Araújo,41
+502,Maria Laura Souza,20
+503,Ana Vitória Fernandes,41
+504,Benjamin Barbosa,6
+505,Aurora Nascimento,27
+506,Ana Sophia Araújo,14
+507,Melissa Almeida,39
+508,Victor Hugo Nascimento,41
+509,Amanda Ribeiro,1
+510,Ana Liz Gomes,40
+511,Otávio Rocha,22
+512,Nathan Cardoso,30
+513,Pedro Henrique Costa,42
+514,Catarina Carvalho,2
+515,Letícia Araújo,18
+516,Ana Beatriz Gomes,17
+517,Gabriel Fernandes,38
+518,Cecília Santos,42
+519,Danilo Rocha,11
+520,Maria Alice Cavalcanti,27
+521,Sarah Monteiro,37
+522,Anthony Pinto,33
+523,Otávio Rocha,34
+524,Ian Rodrigues,37
+525,Alícia Lima,28
+526,Maria Eduarda Barbosa,35
+527,Isabel Fernandes,6
+528,Lucas Gabriel Rocha,40
+529,Matheus Freitas,0
+530,Letícia Lima,42
+531,Gustavo Oliveira,16
+532,João Alves,15
+533,Gael Pereira,27
+534,Ana Luiza Nascimento,42
+535,Allana Pinto,38
+536,Maria Sophia Martins,26
+537,Laís Ribeiro,19
+538,Stella Mendes,1
+539,Maria Helena Campos,32
+540,Cauã Freitas,42
+541,Ana Beatriz Barbosa,35
+542,Agatha Fernandes,25
+543,Pedro Miguel Silva,40
+544,Analu Almeida,32
+545,Vinícius Pereira,28
+546,Kauê Pinto,10
+547,Ryan Ribeiro,22
+548,Maria Vitória Cardoso,3
+549,Heitor Martins,1
+550,Gabriela Mendes,42
+551,João Gabriel Rocha,7
+552,Malu Moura,11
+553,João Miguel Silva,42
+554,Maya Almeida,0
+555,Beatriz Dias,21
+556,Davi Miguel Carvalho,20
+557,Davi Miguel Gomes,4
+558,Ryan Silva,14
+559,Esther Oliveira,7
+560,Miguel Henrique Oliveira,22
+561,Murilo Cavalcanti,37
+562,Maria Heloísa Barbosa,38
+563,Luiz Otávio Rodrigues,16
+564,Liz Carvalho,30
+565,Maria Alice Mendes,11
+566,Henrique Pinto,20
+567,Yago Dias,39
+568,Beatriz Barbosa,11
+569,Rebeca Souza,2
+570,Maria Alice Moura,33
+571,Ana Cecília Fernandes,7
+572,Yasmin Gomes,32
+573,Martin Alves,28
+574,Ana Laura Barros,22
+575,Davi Lucas Fernandes,20
+576,Thiago Barbosa,32
+577,Ana Cecília Barros,19
+578,Fernando Cavalcanti,8
+579,Maitê Pinto,25
+580,Alícia Gomes,36
+581,Arthur Henrique Campos,36
+582,Júlia Dias,34
+583,Tomás Gomes,33
+584,Henrique Rodrigues,18
+585,Sarah Dias,23
+586,João Guilherme Freitas,15
+587,Maria Alice Souza,33
+588,Arthur Henrique Ribeiro,1
+589,Kaique Alves,34
+590,Henrique Castro,14
+591,Marina Rocha,1
+592,Heitor Campos,29
+593,Heitor Almeida,31
+594,Matheus Nascimento,13
+595,Victor Hugo Nascimento,31
+596,Luiza Martins,19
+597,Ana Júlia Rodrigues,17
+598,Sophie Pereira,0
+599,Maria Heloísa Cavalcanti,8
+600,Luiz Gustavo Rocha,36
+601,Isadora Carvalho,30
+602,Benjamin Pereira,22
+603,Levi Silva,13
+604,Lucas Rodrigues,17
+605,Emilly Oliveira,42
+606,Emilly Barros,7
+607,Benício Lima,12
+608,João Lucas Carvalho,0
+609,Louise Silva,11
+610,Beatriz Rodrigues,8
+611,Danilo Souza,29
+612,Bianca Nascimento,30
+613,Clara Mendes,38
+614,Maria Isis Oliveira,42
+615,Joaquim Gomes,24
+616,Matheus Oliveira,4
+617,Emanuelly Mendes,11
+618,Mirella Alves,31
+619,Maria Isis Barros,15
+620,João Gabriel Fernandes,35
+621,Lucas Pereira,1
+622,Arthur Gabriel Carvalho,18
+623,Bryan Rodrigues,4
+624,Enzo Almeida,8
+625,Maria Sophia Fernandes,22
+626,Davi Lucca Rocha,9
+627,Olívia Rodrigues,17
+628,Joana Monteiro,23
+629,Laís Campos,38
+630,Maria Luiza Cavalcanti,3
+631,Maria Fernanda Barros,33
+632,Miguel Henrique Moura,1
+633,Lara Moura,24
+634,Kauê Araújo,9
+635,Luiz Henrique Silva,18
+636,Vicente Silva,36
+637,Agatha Rocha,20
+638,Malu Nascimento,26
+639,Heitor Alves,0
+640,Ana Cecília Rocha,12
+641,João Pedro Carvalho,20
+642,Pedro Lucas Cavalcanti,22
+643,Sophia Araújo,5
+644,Yago Lima,18
+645,Davi Lucca Cardoso,5
+646,Laís Carvalho,36
+647,Luiza Barbosa,29
+648,Ana Liz Dias,2
+649,Larissa Fernandes,12
+650,Giovanna Costa,7
+651,Miguel Rodrigues,25
+652,Luiz Otávio Moura,12
+653,Pedro Monteiro,4
+654,Ana Vitória Almeida,12
+655,Catarina Araújo,37
+656,Davi Lucas Santos,32
+657,Arthur Gabriel Cardoso,5
+658,Pedro Miguel Gomes,18
+659,Maya Almeida,16
+660,João Gabriel Pinto,37
+661,Ana Santos,2
+662,Arthur Henrique Pinto,4
+663,João Miguel Barros,11
+664,Lívia Moura,20
+665,Maria Fernanda Fernandes,3
+666,Marina Silva,3
+667,Cauã Cardoso,5
+668,Guilherme Gomes,1
+669,Ana Liz Monteiro,4
+670,Ana Laura Costa,14
+671,Emanuel Cardoso,11
+672,Sarah Pinto,11
+673,Cecília Silva,35
+674,Isabelly Silva,4
+675,Erick Barbosa,33
+676,Thomas Santos,18
+677,Lara Barros,27
+678,Théo Oliveira,15
+679,Maria Valentina Costa,2
+680,Oliver Ribeiro,4
+681,Pedro Lucas Freitas,21
+682,Luiz Felipe Almeida,10
+683,Guilherme Carvalho,25
+684,Analu Araújo,35
+685,Eduardo Santos,5
+686,Amanda Rodrigues,29
+687,João Lucas Rodrigues,38
+688,João Victor Carvalho,36
+689,Allana Pereira,21
+690,Fernanda Pinto,32
+691,Heloísa Martins,39
+692,Analu Carvalho,1
+693,Ana Cecília Costa,15
+694,Enrico Alves,7
+695,Ana Cecília Ribeiro,40
+696,Joana Araújo,34
+697,Yasmin Pinto,41
+698,Cecília Campos,41
+699,Heloise Rocha,11

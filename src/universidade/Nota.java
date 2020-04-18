@@ -28,9 +28,9 @@ public class Nota {
 	
 	public void imprimirDados() {
 		System.out.println("ID da nota: " + id);
-		System.out.println("Aluno: " + aluno.nome);
-		System.out.println("Curso: " + aluno.curso.nome);
-		System.out.println("Disciplina: " + disciplina.nome);
+		System.out.println("Aluno: " + aluno.getNome());
+		System.out.println("Curso: " + aluno.curso.getNome());
+		System.out.println("Disciplina: " + disciplina.getNome());
 		System.out.println("NP1: " + np1);
 		System.out.println("NP2: " + np2);
 		System.out.println("Exame: " + exame);

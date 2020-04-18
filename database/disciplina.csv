@@ -1,0 +1,1205 @@
+cod_disciplina,nome,cod_curso
+0,Agroclimatologia,0
+1,Economia Aplicada,0
+2,Introdução ao Agronegócio,0
+3,Produção Animal I,0
+4,Produção Vegetal I,0
+5,"Sociedade, Conhecimento e Cultura",0
+6,Administração e Estratégia,0
+7,Construção do Conhecimento Científico,0
+8,Matemática Aplicada,0
+9,Produção Animal II,0
+10,Produção Vegetal II,0
+11,Projetos e Relatórios Técnicos,0
+12,Transformações no Processo Produtivo,0
+13,Custos,0
+14,Estatística Aplicada,0
+15,Gestão Ambiental em Agronegocio,0
+16,Gestão da Produção e Qualidade,0
+17,Tecnologia de Produtos de Origem Animal,0
+18,Empreendedorismo e Inovação em Agronegócio,0
+19,Finanças,0
+20,Geoprocessamento,0
+21,Gestão de Pessoas,0
+22,Marketing em Agronegócios,0
+23,Tecnologia de Produtos de Origem Vegetal,0
+24,Desenvolvimento de Produtos Agroindustriais,0
+25,Logística Aplicada,0
+26,Mercados e Comercialização,0
+27,Projetos em Agronegócio,0
+28,Agroclimatologia,1
+29,Economia Aplicada,1
+30,Introdução ao Agronegócio,1
+31,Produção Animal I,1
+32,Produção Vegetal I,1
+33,"Sociedade, Conhecimento e Cultura",1
+34,Administração e Estratégia,1
+35,Construção do Conhecimento Científico,1
+36,Matemática Aplicada,1
+37,Produção Animal II,1
+38,Produção Vegetal II,1
+39,Projetos e Relatórios Técnicos,1
+40,Transformações no Processo Produtivo,1
+41,Custos,1
+42,Estatística Aplicada,1
+43,Gestão Ambiental em Agronegocio,1
+44,Gestão da Produção e Qualidade,1
+45,Tecnologia de Produtos de Origem Animal,1
+46,Empreendedorismo e Inovação em Agronegócio,1
+47,Finanças,1
+48,Geoprocessamento,1
+49,Gestão de Pessoas,1
+50,Marketing em Agronegócios,1
+51,Tecnologia de Produtos de Origem Vegetal,1
+52,Desenvolvimento de Produtos Agroindustriais,1
+53,Logística Aplicada,1
+54,Mercados e Comercialização,1
+55,Projetos em Agronegócio,1
+56,Agroclimatologia,2
+57,Economia Aplicada,2
+58,Introdução ao Agronegócio,2
+59,Produção Animal I,2
+60,Produção Vegetal I,2
+61,"Sociedade, Conhecimento e Cultura",2
+62,Administração e Estratégia,2
+63,Construção do Conhecimento Científico,2
+64,Matemática Aplicada,2
+65,Produção Animal II,2
+66,Produção Vegetal II,2
+67,Projetos e Relatórios Técnicos,2
+68,Transformações no Processo Produtivo,2
+69,Custos,2
+70,Estatística Aplicada,2
+71,Gestão Ambiental em Agronegocio,2
+72,Gestão da Produção e Qualidade,2
+73,Tecnologia de Produtos de Origem Animal,2
+74,Empreendedorismo e Inovação em Agronegócio,2
+75,Finanças,2
+76,Geoprocessamento,2
+77,Gestão de Pessoas,2
+78,Marketing em Agronegócios,2
+79,Tecnologia de Produtos de Origem Vegetal,2
+80,Desenvolvimento de Produtos Agroindustriais,2
+81,Logística Aplicada,2
+82,Mercados e Comercialização,2
+83,Projetos em Agronegócio,2
+84,Agroclimatologia,3
+85,Economia Aplicada,3
+86,Introdução ao Agronegócio,3
+87,Produção Animal I,3
+88,Produção Vegetal I,3
+89,"Sociedade, Conhecimento e Cultura",3
+90,Administração e Estratégia,3
+91,Construção do Conhecimento Científico,3
+92,Matemática Aplicada,3
+93,Produção Animal II,3
+94,Produção Vegetal II,3
+95,Projetos e Relatórios Técnicos,3
+96,Transformações no Processo Produtivo,3
+97,Custos,3
+98,Estatística Aplicada,3
+99,Gestão Ambiental em Agronegocio,3
+100,Gestão da Produção e Qualidade,3
+101,Tecnologia de Produtos de Origem Animal,3
+102,Empreendedorismo e Inovação em Agronegócio,3
+103,Finanças,3
+104,Geoprocessamento,3
+105,Gestão de Pessoas,3
+106,Marketing em Agronegócios,3
+107,Tecnologia de Produtos de Origem Vegetal,3
+108,Desenvolvimento de Produtos Agroindustriais,3
+109,Logística Aplicada,3
+110,Mercados e Comercialização,3
+111,Projetos em Agronegócio,3
+112,Agroclimatologia,4
+113,Economia Aplicada,4
+114,Introdução ao Agronegócio,4
+115,Produção Animal I,4
+116,Produção Vegetal I,4
+117,"Sociedade, Conhecimento e Cultura",4
+118,Administração e Estratégia,4
+119,Construção do Conhecimento Científico,4
+120,Matemática Aplicada,4
+121,Produção Animal II,4
+122,Produção Vegetal II,4
+123,Projetos e Relatórios Técnicos,4
+124,Transformações no Processo Produtivo,4
+125,Custos,4
+126,Estatística Aplicada,4
+127,Gestão Ambiental em Agronegocio,4
+128,Gestão da Produção e Qualidade,4
+129,Tecnologia de Produtos de Origem Animal,4
+130,Empreendedorismo e Inovação em Agronegócio,4
+131,Finanças,4
+132,Geoprocessamento,4
+133,Gestão de Pessoas,4
+134,Marketing em Agronegócios,4
+135,Tecnologia de Produtos de Origem Vegetal,4
+136,Desenvolvimento de Produtos Agroindustriais,4
+137,Logística Aplicada,4
+138,Mercados e Comercialização,4
+139,Projetos em Agronegócio,4
+140,Agroclimatologia,5
+141,Economia Aplicada,5
+142,Introdução ao Agronegócio,5
+143,Produção Animal I,5
+144,Produção Vegetal I,5
+145,"Sociedade, Conhecimento e Cultura",5
+146,Administração e Estratégia,5
+147,Construção do Conhecimento Científico,5
+148,Matemática Aplicada,5
+149,Produção Animal II,5
+150,Produção Vegetal II,5
+151,Projetos e Relatórios Técnicos,5
+152,Transformações no Processo Produtivo,5
+153,Custos,5
+154,Estatística Aplicada,5
+155,Gestão Ambiental em Agronegocio,5
+156,Gestão da Produção e Qualidade,5
+157,Tecnologia de Produtos de Origem Animal,5
+158,Empreendedorismo e Inovação em Agronegócio,5
+159,Finanças,5
+160,Geoprocessamento,5
+161,Gestão de Pessoas,5
+162,Marketing em Agronegócios,5
+163,Tecnologia de Produtos de Origem Vegetal,5
+164,Desenvolvimento de Produtos Agroindustriais,5
+165,Logística Aplicada,5
+166,Mercados e Comercialização,5
+167,Projetos em Agronegócio,5
+168,Agroclimatologia,6
+169,Economia Aplicada,6
+170,Introdução ao Agronegócio,6
+171,Produção Animal I,6
+172,Produção Vegetal I,6
+173,"Sociedade, Conhecimento e Cultura",6
+174,Administração e Estratégia,6
+175,Construção do Conhecimento Científico,6
+176,Matemática Aplicada,6
+177,Produção Animal II,6
+178,Produção Vegetal II,6
+179,Projetos e Relatórios Técnicos,6
+180,Transformações no Processo Produtivo,6
+181,Custos,6
+182,Estatística Aplicada,6
+183,Gestão Ambiental em Agronegocio,6
+184,Gestão da Produção e Qualidade,6
+185,Tecnologia de Produtos de Origem Animal,6
+186,Empreendedorismo e Inovação em Agronegócio,6
+187,Finanças,6
+188,Geoprocessamento,6
+189,Gestão de Pessoas,6
+190,Marketing em Agronegócios,6
+191,Tecnologia de Produtos de Origem Vegetal,6
+192,Desenvolvimento de Produtos Agroindustriais,6
+193,Logística Aplicada,6
+194,Mercados e Comercialização,6
+195,Projetos em Agronegócio,6
+196,Agroclimatologia,7
+197,Economia Aplicada,7
+198,Introdução ao Agronegócio,7
+199,Produção Animal I,7
+200,Produção Vegetal I,7
+201,"Sociedade, Conhecimento e Cultura",7
+202,Administração e Estratégia,7
+203,Construção do Conhecimento Científico,7
+204,Matemática Aplicada,7
+205,Produção Animal II,7
+206,Produção Vegetal II,7
+207,Projetos e Relatórios Técnicos,7
+208,Transformações no Processo Produtivo,7
+209,Custos,7
+210,Estatística Aplicada,7
+211,Gestão Ambiental em Agronegocio,7
+212,Gestão da Produção e Qualidade,7
+213,Tecnologia de Produtos de Origem Animal,7
+214,Empreendedorismo e Inovação em Agronegócio,7
+215,Finanças,7
+216,Geoprocessamento,7
+217,Gestão de Pessoas,7
+218,Marketing em Agronegócios,7
+219,Tecnologia de Produtos de Origem Vegetal,7
+220,Desenvolvimento de Produtos Agroindustriais,7
+221,Logística Aplicada,7
+222,Mercados e Comercialização,7
+223,Projetos em Agronegócio,7
+224,Agroclimatologia,8
+225,Economia Aplicada,8
+226,Introdução ao Agronegócio,8
+227,Produção Animal I,8
+228,Produção Vegetal I,8
+229,"Sociedade, Conhecimento e Cultura",8
+230,Administração e Estratégia,8
+231,Construção do Conhecimento Científico,8
+232,Matemática Aplicada,8
+233,Produção Animal II,8
+234,Produção Vegetal II,8
+235,Projetos e Relatórios Técnicos,8
+236,Transformações no Processo Produtivo,8
+237,Custos,8
+238,Estatística Aplicada,8
+239,Gestão Ambiental em Agronegocio,8
+240,Gestão da Produção e Qualidade,8
+241,Tecnologia de Produtos de Origem Animal,8
+242,Empreendedorismo e Inovação em Agronegócio,8
+243,Finanças,8
+244,Geoprocessamento,8
+245,Gestão de Pessoas,8
+246,Marketing em Agronegócios,8
+247,Tecnologia de Produtos de Origem Vegetal,8
+248,Desenvolvimento de Produtos Agroindustriais,8
+249,Logística Aplicada,8
+250,Mercados e Comercialização,8
+251,Projetos em Agronegócio,8
+252,Agroclimatologia,9
+253,Economia Aplicada,9
+254,Introdução ao Agronegócio,9
+255,Produção Animal I,9
+256,Produção Vegetal I,9
+257,"Sociedade, Conhecimento e Cultura",9
+258,Administração e Estratégia,9
+259,Construção do Conhecimento Científico,9
+260,Matemática Aplicada,9
+261,Produção Animal II,9
+262,Produção Vegetal II,9
+263,Projetos e Relatórios Técnicos,9
+264,Transformações no Processo Produtivo,9
+265,Custos,9
+266,Estatística Aplicada,9
+267,Gestão Ambiental em Agronegocio,9
+268,Gestão da Produção e Qualidade,9
+269,Tecnologia de Produtos de Origem Animal,9
+270,Empreendedorismo e Inovação em Agronegócio,9
+271,Finanças,9
+272,Geoprocessamento,9
+273,Gestão de Pessoas,9
+274,Marketing em Agronegócios,9
+275,Tecnologia de Produtos de Origem Vegetal,9
+276,Desenvolvimento de Produtos Agroindustriais,9
+277,Logística Aplicada,9
+278,Mercados e Comercialização,9
+279,Projetos em Agronegócio,9
+280,Agroclimatologia,10
+281,Economia Aplicada,10
+282,Introdução ao Agronegócio,10
+283,Produção Animal I,10
+284,Produção Vegetal I,10
+285,"Sociedade, Conhecimento e Cultura",10
+286,Administração e Estratégia,10
+287,Construção do Conhecimento Científico,10
+288,Matemática Aplicada,10
+289,Produção Animal II,10
+290,Produção Vegetal II,10
+291,Projetos e Relatórios Técnicos,10
+292,Transformações no Processo Produtivo,10
+293,Custos,10
+294,Estatística Aplicada,10
+295,Gestão Ambiental em Agronegocio,10
+296,Gestão da Produção e Qualidade,10
+297,Tecnologia de Produtos de Origem Animal,10
+298,Empreendedorismo e Inovação em Agronegócio,10
+299,Finanças,10
+300,Geoprocessamento,10
+301,Gestão de Pessoas,10
+302,Marketing em Agronegócios,10
+303,Tecnologia de Produtos de Origem Vegetal,10
+304,Desenvolvimento de Produtos Agroindustriais,10
+305,Logística Aplicada,10
+306,Mercados e Comercialização,10
+307,Projetos em Agronegócio,10
+308,Agroclimatologia,11
+309,Economia Aplicada,11
+310,Introdução ao Agronegócio,11
+311,Produção Animal I,11
+312,Produção Vegetal I,11
+313,"Sociedade, Conhecimento e Cultura",11
+314,Administração e Estratégia,11
+315,Construção do Conhecimento Científico,11
+316,Matemática Aplicada,11
+317,Produção Animal II,11
+318,Produção Vegetal II,11
+319,Projetos e Relatórios Técnicos,11
+320,Transformações no Processo Produtivo,11
+321,Custos,11
+322,Estatística Aplicada,11
+323,Gestão Ambiental em Agronegocio,11
+324,Gestão da Produção e Qualidade,11
+325,Tecnologia de Produtos de Origem Animal,11
+326,Empreendedorismo e Inovação em Agronegócio,11
+327,Finanças,11
+328,Geoprocessamento,11
+329,Gestão de Pessoas,11
+330,Marketing em Agronegócios,11
+331,Tecnologia de Produtos de Origem Vegetal,11
+332,Desenvolvimento de Produtos Agroindustriais,11
+333,Logística Aplicada,11
+334,Mercados e Comercialização,11
+335,Projetos em Agronegócio,11
+336,Agroclimatologia,12
+337,Economia Aplicada,12
+338,Introdução ao Agronegócio,12
+339,Produção Animal I,12
+340,Produção Vegetal I,12
+341,"Sociedade, Conhecimento e Cultura",12
+342,Administração e Estratégia,12
+343,Construção do Conhecimento Científico,12
+344,Matemática Aplicada,12
+345,Produção Animal II,12
+346,Produção Vegetal II,12
+347,Projetos e Relatórios Técnicos,12
+348,Transformações no Processo Produtivo,12
+349,Custos,12
+350,Estatística Aplicada,12
+351,Gestão Ambiental em Agronegocio,12
+352,Gestão da Produção e Qualidade,12
+353,Tecnologia de Produtos de Origem Animal,12
+354,Empreendedorismo e Inovação em Agronegócio,12
+355,Finanças,12
+356,Geoprocessamento,12
+357,Gestão de Pessoas,12
+358,Marketing em Agronegócios,12
+359,Tecnologia de Produtos de Origem Vegetal,12
+360,Desenvolvimento de Produtos Agroindustriais,12
+361,Logística Aplicada,12
+362,Mercados e Comercialização,12
+363,Projetos em Agronegócio,12
+364,Agroclimatologia,13
+365,Economia Aplicada,13
+366,Introdução ao Agronegócio,13
+367,Produção Animal I,13
+368,Produção Vegetal I,13
+369,"Sociedade, Conhecimento e Cultura",13
+370,Administração e Estratégia,13
+371,Construção do Conhecimento Científico,13
+372,Matemática Aplicada,13
+373,Produção Animal II,13
+374,Produção Vegetal II,13
+375,Projetos e Relatórios Técnicos,13
+376,Transformações no Processo Produtivo,13
+377,Custos,13
+378,Estatística Aplicada,13
+379,Gestão Ambiental em Agronegocio,13
+380,Gestão da Produção e Qualidade,13
+381,Tecnologia de Produtos de Origem Animal,13
+382,Empreendedorismo e Inovação em Agronegócio,13
+383,Finanças,13
+384,Geoprocessamento,13
+385,Gestão de Pessoas,13
+386,Marketing em Agronegócios,13
+387,Tecnologia de Produtos de Origem Vegetal,13
+388,Desenvolvimento de Produtos Agroindustriais,13
+389,Logística Aplicada,13
+390,Mercados e Comercialização,13
+391,Projetos em Agronegócio,13
+392,Agroclimatologia,14
+393,Economia Aplicada,14
+394,Introdução ao Agronegócio,14
+395,Produção Animal I,14
+396,Produção Vegetal I,14
+397,"Sociedade, Conhecimento e Cultura",14
+398,Administração e Estratégia,14
+399,Construção do Conhecimento Científico,14
+400,Matemática Aplicada,14
+401,Produção Animal II,14
+402,Produção Vegetal II,14
+403,Projetos e Relatórios Técnicos,14
+404,Transformações no Processo Produtivo,14
+405,Custos,14
+406,Estatística Aplicada,14
+407,Gestão Ambiental em Agronegocio,14
+408,Gestão da Produção e Qualidade,14
+409,Tecnologia de Produtos de Origem Animal,14
+410,Empreendedorismo e Inovação em Agronegócio,14
+411,Finanças,14
+412,Geoprocessamento,14
+413,Gestão de Pessoas,14
+414,Marketing em Agronegócios,14
+415,Tecnologia de Produtos de Origem Vegetal,14
+416,Desenvolvimento de Produtos Agroindustriais,14
+417,Logística Aplicada,14
+418,Mercados e Comercialização,14
+419,Projetos em Agronegócio,14
+420,Agroclimatologia,15
+421,Economia Aplicada,15
+422,Introdução ao Agronegócio,15
+423,Produção Animal I,15
+424,Produção Vegetal I,15
+425,"Sociedade, Conhecimento e Cultura",15
+426,Administração e Estratégia,15
+427,Construção do Conhecimento Científico,15
+428,Matemática Aplicada,15
+429,Produção Animal II,15
+430,Produção Vegetal II,15
+431,Projetos e Relatórios Técnicos,15
+432,Transformações no Processo Produtivo,15
+433,Custos,15
+434,Estatística Aplicada,15
+435,Gestão Ambiental em Agronegocio,15
+436,Gestão da Produção e Qualidade,15
+437,Tecnologia de Produtos de Origem Animal,15
+438,Empreendedorismo e Inovação em Agronegócio,15
+439,Finanças,15
+440,Geoprocessamento,15
+441,Gestão de Pessoas,15
+442,Marketing em Agronegócios,15
+443,Tecnologia de Produtos de Origem Vegetal,15
+444,Desenvolvimento de Produtos Agroindustriais,15
+445,Logística Aplicada,15
+446,Mercados e Comercialização,15
+447,Projetos em Agronegócio,15
+448,Agroclimatologia,16
+449,Economia Aplicada,16
+450,Introdução ao Agronegócio,16
+451,Produção Animal I,16
+452,Produção Vegetal I,16
+453,"Sociedade, Conhecimento e Cultura",16
+454,Administração e Estratégia,16
+455,Construção do Conhecimento Científico,16
+456,Matemática Aplicada,16
+457,Produção Animal II,16
+458,Produção Vegetal II,16
+459,Projetos e Relatórios Técnicos,16
+460,Transformações no Processo Produtivo,16
+461,Custos,16
+462,Estatística Aplicada,16
+463,Gestão Ambiental em Agronegocio,16
+464,Gestão da Produção e Qualidade,16
+465,Tecnologia de Produtos de Origem Animal,16
+466,Empreendedorismo e Inovação em Agronegócio,16
+467,Finanças,16
+468,Geoprocessamento,16
+469,Gestão de Pessoas,16
+470,Marketing em Agronegócios,16
+471,Tecnologia de Produtos de Origem Vegetal,16
+472,Desenvolvimento de Produtos Agroindustriais,16
+473,Logística Aplicada,16
+474,Mercados e Comercialização,16
+475,Projetos em Agronegócio,16
+476,Agroclimatologia,17
+477,Economia Aplicada,17
+478,Introdução ao Agronegócio,17
+479,Produção Animal I,17
+480,Produção Vegetal I,17
+481,"Sociedade, Conhecimento e Cultura",17
+482,Administração e Estratégia,17
+483,Construção do Conhecimento Científico,17
+484,Matemática Aplicada,17
+485,Produção Animal II,17
+486,Produção Vegetal II,17
+487,Projetos e Relatórios Técnicos,17
+488,Transformações no Processo Produtivo,17
+489,Custos,17
+490,Estatística Aplicada,17
+491,Gestão Ambiental em Agronegocio,17
+492,Gestão da Produção e Qualidade,17
+493,Tecnologia de Produtos de Origem Animal,17
+494,Empreendedorismo e Inovação em Agronegócio,17
+495,Finanças,17
+496,Geoprocessamento,17
+497,Gestão de Pessoas,17
+498,Marketing em Agronegócios,17
+499,Tecnologia de Produtos de Origem Vegetal,17
+500,Desenvolvimento de Produtos Agroindustriais,17
+501,Logística Aplicada,17
+502,Mercados e Comercialização,17
+503,Projetos em Agronegócio,17
+504,Agroclimatologia,18
+505,Economia Aplicada,18
+506,Introdução ao Agronegócio,18
+507,Produção Animal I,18
+508,Produção Vegetal I,18
+509,"Sociedade, Conhecimento e Cultura",18
+510,Administração e Estratégia,18
+511,Construção do Conhecimento Científico,18
+512,Matemática Aplicada,18
+513,Produção Animal II,18
+514,Produção Vegetal II,18
+515,Projetos e Relatórios Técnicos,18
+516,Transformações no Processo Produtivo,18
+517,Custos,18
+518,Estatística Aplicada,18
+519,Gestão Ambiental em Agronegocio,18
+520,Gestão da Produção e Qualidade,18
+521,Tecnologia de Produtos de Origem Animal,18
+522,Empreendedorismo e Inovação em Agronegócio,18
+523,Finanças,18
+524,Geoprocessamento,18
+525,Gestão de Pessoas,18
+526,Marketing em Agronegócios,18
+527,Tecnologia de Produtos de Origem Vegetal,18
+528,Desenvolvimento de Produtos Agroindustriais,18
+529,Logística Aplicada,18
+530,Mercados e Comercialização,18
+531,Projetos em Agronegócio,18
+532,Agroclimatologia,19
+533,Economia Aplicada,19
+534,Introdução ao Agronegócio,19
+535,Produção Animal I,19
+536,Produção Vegetal I,19
+537,"Sociedade, Conhecimento e Cultura",19
+538,Administração e Estratégia,19
+539,Construção do Conhecimento Científico,19
+540,Matemática Aplicada,19
+541,Produção Animal II,19
+542,Produção Vegetal II,19
+543,Projetos e Relatórios Técnicos,19
+544,Transformações no Processo Produtivo,19
+545,Custos,19
+546,Estatística Aplicada,19
+547,Gestão Ambiental em Agronegocio,19
+548,Gestão da Produção e Qualidade,19
+549,Tecnologia de Produtos de Origem Animal,19
+550,Empreendedorismo e Inovação em Agronegócio,19
+551,Finanças,19
+552,Geoprocessamento,19
+553,Gestão de Pessoas,19
+554,Marketing em Agronegócios,19
+555,Tecnologia de Produtos de Origem Vegetal,19
+556,Desenvolvimento de Produtos Agroindustriais,19
+557,Logística Aplicada,19
+558,Mercados e Comercialização,19
+559,Projetos em Agronegócio,19
+560,Agroclimatologia,20
+561,Economia Aplicada,20
+562,Introdução ao Agronegócio,20
+563,Produção Animal I,20
+564,Produção Vegetal I,20
+565,"Sociedade, Conhecimento e Cultura",20
+566,Administração e Estratégia,20
+567,Construção do Conhecimento Científico,20
+568,Matemática Aplicada,20
+569,Produção Animal II,20
+570,Produção Vegetal II,20
+571,Projetos e Relatórios Técnicos,20
+572,Transformações no Processo Produtivo,20
+573,Custos,20
+574,Estatística Aplicada,20
+575,Gestão Ambiental em Agronegocio,20
+576,Gestão da Produção e Qualidade,20
+577,Tecnologia de Produtos de Origem Animal,20
+578,Empreendedorismo e Inovação em Agronegócio,20
+579,Finanças,20
+580,Geoprocessamento,20
+581,Gestão de Pessoas,20
+582,Marketing em Agronegócios,20
+583,Tecnologia de Produtos de Origem Vegetal,20
+584,Desenvolvimento de Produtos Agroindustriais,20
+585,Logística Aplicada,20
+586,Mercados e Comercialização,20
+587,Projetos em Agronegócio,20
+588,Agroclimatologia,21
+589,Economia Aplicada,21
+590,Introdução ao Agronegócio,21
+591,Produção Animal I,21
+592,Produção Vegetal I,21
+593,"Sociedade, Conhecimento e Cultura",21
+594,Administração e Estratégia,21
+595,Construção do Conhecimento Científico,21
+596,Matemática Aplicada,21
+597,Produção Animal II,21
+598,Produção Vegetal II,21
+599,Projetos e Relatórios Técnicos,21
+600,Transformações no Processo Produtivo,21
+601,Custos,21
+602,Estatística Aplicada,21
+603,Gestão Ambiental em Agronegocio,21
+604,Gestão da Produção e Qualidade,21
+605,Tecnologia de Produtos de Origem Animal,21
+606,Empreendedorismo e Inovação em Agronegócio,21
+607,Finanças,21
+608,Geoprocessamento,21
+609,Gestão de Pessoas,21
+610,Marketing em Agronegócios,21
+611,Tecnologia de Produtos de Origem Vegetal,21
+612,Desenvolvimento de Produtos Agroindustriais,21
+613,Logística Aplicada,21
+614,Mercados e Comercialização,21
+615,Projetos em Agronegócio,21
+616,Agroclimatologia,22
+617,Economia Aplicada,22
+618,Introdução ao Agronegócio,22
+619,Produção Animal I,22
+620,Produção Vegetal I,22
+621,"Sociedade, Conhecimento e Cultura",22
+622,Administração e Estratégia,22
+623,Construção do Conhecimento Científico,22
+624,Matemática Aplicada,22
+625,Produção Animal II,22
+626,Produção Vegetal II,22
+627,Projetos e Relatórios Técnicos,22
+628,Transformações no Processo Produtivo,22
+629,Custos,22
+630,Estatística Aplicada,22
+631,Gestão Ambiental em Agronegocio,22
+632,Gestão da Produção e Qualidade,22
+633,Tecnologia de Produtos de Origem Animal,22
+634,Empreendedorismo e Inovação em Agronegócio,22
+635,Finanças,22
+636,Geoprocessamento,22
+637,Gestão de Pessoas,22
+638,Marketing em Agronegócios,22
+639,Tecnologia de Produtos de Origem Vegetal,22
+640,Desenvolvimento de Produtos Agroindustriais,22
+641,Logística Aplicada,22
+642,Mercados e Comercialização,22
+643,Projetos em Agronegócio,22
+644,Agroclimatologia,23
+645,Economia Aplicada,23
+646,Introdução ao Agronegócio,23
+647,Produção Animal I,23
+648,Produção Vegetal I,23
+649,"Sociedade, Conhecimento e Cultura",23
+650,Administração e Estratégia,23
+651,Construção do Conhecimento Científico,23
+652,Matemática Aplicada,23
+653,Produção Animal II,23
+654,Produção Vegetal II,23
+655,Projetos e Relatórios Técnicos,23
+656,Transformações no Processo Produtivo,23
+657,Custos,23
+658,Estatística Aplicada,23
+659,Gestão Ambiental em Agronegocio,23
+660,Gestão da Produção e Qualidade,23
+661,Tecnologia de Produtos de Origem Animal,23
+662,Empreendedorismo e Inovação em Agronegócio,23
+663,Finanças,23
+664,Geoprocessamento,23
+665,Gestão de Pessoas,23
+666,Marketing em Agronegócios,23
+667,Tecnologia de Produtos de Origem Vegetal,23
+668,Desenvolvimento de Produtos Agroindustriais,23
+669,Logística Aplicada,23
+670,Mercados e Comercialização,23
+671,Projetos em Agronegócio,23
+672,Agroclimatologia,24
+673,Economia Aplicada,24
+674,Introdução ao Agronegócio,24
+675,Produção Animal I,24
+676,Produção Vegetal I,24
+677,"Sociedade, Conhecimento e Cultura",24
+678,Administração e Estratégia,24
+679,Construção do Conhecimento Científico,24
+680,Matemática Aplicada,24
+681,Produção Animal II,24
+682,Produção Vegetal II,24
+683,Projetos e Relatórios Técnicos,24
+684,Transformações no Processo Produtivo,24
+685,Custos,24
+686,Estatística Aplicada,24
+687,Gestão Ambiental em Agronegocio,24
+688,Gestão da Produção e Qualidade,24
+689,Tecnologia de Produtos de Origem Animal,24
+690,Empreendedorismo e Inovação em Agronegócio,24
+691,Finanças,24
+692,Geoprocessamento,24
+693,Gestão de Pessoas,24
+694,Marketing em Agronegócios,24
+695,Tecnologia de Produtos de Origem Vegetal,24
+696,Desenvolvimento de Produtos Agroindustriais,24
+697,Logística Aplicada,24
+698,Mercados e Comercialização,24
+699,Projetos em Agronegócio,24
+700,Agroclimatologia,25
+701,Economia Aplicada,25
+702,Introdução ao Agronegócio,25
+703,Produção Animal I,25
+704,Produção Vegetal I,25
+705,"Sociedade, Conhecimento e Cultura",25
+706,Administração e Estratégia,25
+707,Construção do Conhecimento Científico,25
+708,Matemática Aplicada,25
+709,Produção Animal II,25
+710,Produção Vegetal II,25
+711,Projetos e Relatórios Técnicos,25
+712,Transformações no Processo Produtivo,25
+713,Custos,25
+714,Estatística Aplicada,25
+715,Gestão Ambiental em Agronegocio,25
+716,Gestão da Produção e Qualidade,25
+717,Tecnologia de Produtos de Origem Animal,25
+718,Empreendedorismo e Inovação em Agronegócio,25
+719,Finanças,25
+720,Geoprocessamento,25
+721,Gestão de Pessoas,25
+722,Marketing em Agronegócios,25
+723,Tecnologia de Produtos de Origem Vegetal,25
+724,Desenvolvimento de Produtos Agroindustriais,25
+725,Logística Aplicada,25
+726,Mercados e Comercialização,25
+727,Projetos em Agronegócio,25
+728,Agroclimatologia,26
+729,Economia Aplicada,26
+730,Introdução ao Agronegócio,26
+731,Produção Animal I,26
+732,Produção Vegetal I,26
+733,"Sociedade, Conhecimento e Cultura",26
+734,Administração e Estratégia,26
+735,Construção do Conhecimento Científico,26
+736,Matemática Aplicada,26
+737,Produção Animal II,26
+738,Produção Vegetal II,26
+739,Projetos e Relatórios Técnicos,26
+740,Transformações no Processo Produtivo,26
+741,Custos,26
+742,Estatística Aplicada,26
+743,Gestão Ambiental em Agronegocio,26
+744,Gestão da Produção e Qualidade,26
+745,Tecnologia de Produtos de Origem Animal,26
+746,Empreendedorismo e Inovação em Agronegócio,26
+747,Finanças,26
+748,Geoprocessamento,26
+749,Gestão de Pessoas,26
+750,Marketing em Agronegócios,26
+751,Tecnologia de Produtos de Origem Vegetal,26
+752,Desenvolvimento de Produtos Agroindustriais,26
+753,Logística Aplicada,26
+754,Mercados e Comercialização,26
+755,Projetos em Agronegócio,26
+756,Agroclimatologia,27
+757,Economia Aplicada,27
+758,Introdução ao Agronegócio,27
+759,Produção Animal I,27
+760,Produção Vegetal I,27
+761,"Sociedade, Conhecimento e Cultura",27
+762,Administração e Estratégia,27
+763,Construção do Conhecimento Científico,27
+764,Matemática Aplicada,27
+765,Produção Animal II,27
+766,Produção Vegetal II,27
+767,Projetos e Relatórios Técnicos,27
+768,Transformações no Processo Produtivo,27
+769,Custos,27
+770,Estatística Aplicada,27
+771,Gestão Ambiental em Agronegocio,27
+772,Gestão da Produção e Qualidade,27
+773,Tecnologia de Produtos de Origem Animal,27
+774,Empreendedorismo e Inovação em Agronegócio,27
+775,Finanças,27
+776,Geoprocessamento,27
+777,Gestão de Pessoas,27
+778,Marketing em Agronegócios,27
+779,Tecnologia de Produtos de Origem Vegetal,27
+780,Desenvolvimento de Produtos Agroindustriais,27
+781,Logística Aplicada,27
+782,Mercados e Comercialização,27
+783,Projetos em Agronegócio,27
+784,Agroclimatologia,28
+785,Economia Aplicada,28
+786,Introdução ao Agronegócio,28
+787,Produção Animal I,28
+788,Produção Vegetal I,28
+789,"Sociedade, Conhecimento e Cultura",28
+790,Administração e Estratégia,28
+791,Construção do Conhecimento Científico,28
+792,Matemática Aplicada,28
+793,Produção Animal II,28
+794,Produção Vegetal II,28
+795,Projetos e Relatórios Técnicos,28
+796,Transformações no Processo Produtivo,28
+797,Custos,28
+798,Estatística Aplicada,28
+799,Gestão Ambiental em Agronegocio,28
+800,Gestão da Produção e Qualidade,28
+801,Tecnologia de Produtos de Origem Animal,28
+802,Empreendedorismo e Inovação em Agronegócio,28
+803,Finanças,28
+804,Geoprocessamento,28
+805,Gestão de Pessoas,28
+806,Marketing em Agronegócios,28
+807,Tecnologia de Produtos de Origem Vegetal,28
+808,Desenvolvimento de Produtos Agroindustriais,28
+809,Logística Aplicada,28
+810,Mercados e Comercialização,28
+811,Projetos em Agronegócio,28
+812,Agroclimatologia,29
+813,Economia Aplicada,29
+814,Introdução ao Agronegócio,29
+815,Produção Animal I,29
+816,Produção Vegetal I,29
+817,"Sociedade, Conhecimento e Cultura",29
+818,Administração e Estratégia,29
+819,Construção do Conhecimento Científico,29
+820,Matemática Aplicada,29
+821,Produção Animal II,29
+822,Produção Vegetal II,29
+823,Projetos e Relatórios Técnicos,29
+824,Transformações no Processo Produtivo,29
+825,Custos,29
+826,Estatística Aplicada,29
+827,Gestão Ambiental em Agronegocio,29
+828,Gestão da Produção e Qualidade,29
+829,Tecnologia de Produtos de Origem Animal,29
+830,Empreendedorismo e Inovação em Agronegócio,29
+831,Finanças,29
+832,Geoprocessamento,29
+833,Gestão de Pessoas,29
+834,Marketing em Agronegócios,29
+835,Tecnologia de Produtos de Origem Vegetal,29
+836,Desenvolvimento de Produtos Agroindustriais,29
+837,Logística Aplicada,29
+838,Mercados e Comercialização,29
+839,Projetos em Agronegócio,29
+840,Agroclimatologia,30
+841,Economia Aplicada,30
+842,Introdução ao Agronegócio,30
+843,Produção Animal I,30
+844,Produção Vegetal I,30
+845,"Sociedade, Conhecimento e Cultura",30
+846,Administração e Estratégia,30
+847,Construção do Conhecimento Científico,30
+848,Matemática Aplicada,30
+849,Produção Animal II,30
+850,Produção Vegetal II,30
+851,Projetos e Relatórios Técnicos,30
+852,Transformações no Processo Produtivo,30
+853,Custos,30
+854,Estatística Aplicada,30
+855,Gestão Ambiental em Agronegocio,30
+856,Gestão da Produção e Qualidade,30
+857,Tecnologia de Produtos de Origem Animal,30
+858,Empreendedorismo e Inovação em Agronegócio,30
+859,Finanças,30
+860,Geoprocessamento,30
+861,Gestão de Pessoas,30
+862,Marketing em Agronegócios,30
+863,Tecnologia de Produtos de Origem Vegetal,30
+864,Desenvolvimento de Produtos Agroindustriais,30
+865,Logística Aplicada,30
+866,Mercados e Comercialização,30
+867,Projetos em Agronegócio,30
+868,Agroclimatologia,31
+869,Economia Aplicada,31
+870,Introdução ao Agronegócio,31
+871,Produção Animal I,31
+872,Produção Vegetal I,31
+873,"Sociedade, Conhecimento e Cultura",31
+874,Administração e Estratégia,31
+875,Construção do Conhecimento Científico,31
+876,Matemática Aplicada,31
+877,Produção Animal II,31
+878,Produção Vegetal II,31
+879,Projetos e Relatórios Técnicos,31
+880,Transformações no Processo Produtivo,31
+881,Custos,31
+882,Estatística Aplicada,31
+883,Gestão Ambiental em Agronegocio,31
+884,Gestão da Produção e Qualidade,31
+885,Tecnologia de Produtos de Origem Animal,31
+886,Empreendedorismo e Inovação em Agronegócio,31
+887,Finanças,31
+888,Geoprocessamento,31
+889,Gestão de Pessoas,31
+890,Marketing em Agronegócios,31
+891,Tecnologia de Produtos de Origem Vegetal,31
+892,Desenvolvimento de Produtos Agroindustriais,31
+893,Logística Aplicada,31
+894,Mercados e Comercialização,31
+895,Projetos em Agronegócio,31
+896,Agroclimatologia,32
+897,Economia Aplicada,32
+898,Introdução ao Agronegócio,32
+899,Produção Animal I,32
+900,Produção Vegetal I,32
+901,"Sociedade, Conhecimento e Cultura",32
+902,Administração e Estratégia,32
+903,Construção do Conhecimento Científico,32
+904,Matemática Aplicada,32
+905,Produção Animal II,32
+906,Produção Vegetal II,32
+907,Projetos e Relatórios Técnicos,32
+908,Transformações no Processo Produtivo,32
+909,Custos,32
+910,Estatística Aplicada,32
+911,Gestão Ambiental em Agronegocio,32
+912,Gestão da Produção e Qualidade,32
+913,Tecnologia de Produtos de Origem Animal,32
+914,Empreendedorismo e Inovação em Agronegócio,32
+915,Finanças,32
+916,Geoprocessamento,32
+917,Gestão de Pessoas,32
+918,Marketing em Agronegócios,32
+919,Tecnologia de Produtos de Origem Vegetal,32
+920,Desenvolvimento de Produtos Agroindustriais,32
+921,Logística Aplicada,32
+922,Mercados e Comercialização,32
+923,Projetos em Agronegócio,32
+924,Agroclimatologia,33
+925,Economia Aplicada,33
+926,Introdução ao Agronegócio,33
+927,Produção Animal I,33
+928,Produção Vegetal I,33
+929,"Sociedade, Conhecimento e Cultura",33
+930,Administração e Estratégia,33
+931,Construção do Conhecimento Científico,33
+932,Matemática Aplicada,33
+933,Produção Animal II,33
+934,Produção Vegetal II,33
+935,Projetos e Relatórios Técnicos,33
+936,Transformações no Processo Produtivo,33
+937,Custos,33
+938,Estatística Aplicada,33
+939,Gestão Ambiental em Agronegocio,33
+940,Gestão da Produção e Qualidade,33
+941,Tecnologia de Produtos de Origem Animal,33
+942,Empreendedorismo e Inovação em Agronegócio,33
+943,Finanças,33
+944,Geoprocessamento,33
+945,Gestão de Pessoas,33
+946,Marketing em Agronegócios,33
+947,Tecnologia de Produtos de Origem Vegetal,33
+948,Desenvolvimento de Produtos Agroindustriais,33
+949,Logística Aplicada,33
+950,Mercados e Comercialização,33
+951,Projetos em Agronegócio,33
+952,Agroclimatologia,34
+953,Economia Aplicada,34
+954,Introdução ao Agronegócio,34
+955,Produção Animal I,34
+956,Produção Vegetal I,34
+957,"Sociedade, Conhecimento e Cultura",34
+958,Administração e Estratégia,34
+959,Construção do Conhecimento Científico,34
+960,Matemática Aplicada,34
+961,Produção Animal II,34
+962,Produção Vegetal II,34
+963,Projetos e Relatórios Técnicos,34
+964,Transformações no Processo Produtivo,34
+965,Custos,34
+966,Estatística Aplicada,34
+967,Gestão Ambiental em Agronegocio,34
+968,Gestão da Produção e Qualidade,34
+969,Tecnologia de Produtos de Origem Animal,34
+970,Empreendedorismo e Inovação em Agronegócio,34
+971,Finanças,34
+972,Geoprocessamento,34
+973,Gestão de Pessoas,34
+974,Marketing em Agronegócios,34
+975,Tecnologia de Produtos de Origem Vegetal,34
+976,Desenvolvimento de Produtos Agroindustriais,34
+977,Logística Aplicada,34
+978,Mercados e Comercialização,34
+979,Projetos em Agronegócio,34
+980,Agroclimatologia,35
+981,Economia Aplicada,35
+982,Introdução ao Agronegócio,35
+983,Produção Animal I,35
+984,Produção Vegetal I,35
+985,"Sociedade, Conhecimento e Cultura",35
+986,Administração e Estratégia,35
+987,Construção do Conhecimento Científico,35
+988,Matemática Aplicada,35
+989,Produção Animal II,35
+990,Produção Vegetal II,35
+991,Projetos e Relatórios Técnicos,35
+992,Transformações no Processo Produtivo,35
+993,Custos,35
+994,Estatística Aplicada,35
+995,Gestão Ambiental em Agronegocio,35
+996,Gestão da Produção e Qualidade,35
+997,Tecnologia de Produtos de Origem Animal,35
+998,Empreendedorismo e Inovação em Agronegócio,35
+999,Finanças,35
+1000,Geoprocessamento,35
+1001,Gestão de Pessoas,35
+1002,Marketing em Agronegócios,35
+1003,Tecnologia de Produtos de Origem Vegetal,35
+1004,Desenvolvimento de Produtos Agroindustriais,35
+1005,Logística Aplicada,35
+1006,Mercados e Comercialização,35
+1007,Projetos em Agronegócio,35
+1008,Agroclimatologia,36
+1009,Economia Aplicada,36
+1010,Introdução ao Agronegócio,36
+1011,Produção Animal I,36
+1012,Produção Vegetal I,36
+1013,"Sociedade, Conhecimento e Cultura",36
+1014,Administração e Estratégia,36
+1015,Construção do Conhecimento Científico,36
+1016,Matemática Aplicada,36
+1017,Produção Animal II,36
+1018,Produção Vegetal II,36
+1019,Projetos e Relatórios Técnicos,36
+1020,Transformações no Processo Produtivo,36
+1021,Custos,36
+1022,Estatística Aplicada,36
+1023,Gestão Ambiental em Agronegocio,36
+1024,Gestão da Produção e Qualidade,36
+1025,Tecnologia de Produtos de Origem Animal,36
+1026,Empreendedorismo e Inovação em Agronegócio,36
+1027,Finanças,36
+1028,Geoprocessamento,36
+1029,Gestão de Pessoas,36
+1030,Marketing em Agronegócios,36
+1031,Tecnologia de Produtos de Origem Vegetal,36
+1032,Desenvolvimento de Produtos Agroindustriais,36
+1033,Logística Aplicada,36
+1034,Mercados e Comercialização,36
+1035,Projetos em Agronegócio,36
+1036,Agroclimatologia,37
+1037,Economia Aplicada,37
+1038,Introdução ao Agronegócio,37
+1039,Produção Animal I,37
+1040,Produção Vegetal I,37
+1041,"Sociedade, Conhecimento e Cultura",37
+1042,Administração e Estratégia,37
+1043,Construção do Conhecimento Científico,37
+1044,Matemática Aplicada,37
+1045,Produção Animal II,37
+1046,Produção Vegetal II,37
+1047,Projetos e Relatórios Técnicos,37
+1048,Transformações no Processo Produtivo,37
+1049,Custos,37
+1050,Estatística Aplicada,37
+1051,Gestão Ambiental em Agronegocio,37
+1052,Gestão da Produção e Qualidade,37
+1053,Tecnologia de Produtos de Origem Animal,37
+1054,Empreendedorismo e Inovação em Agronegócio,37
+1055,Finanças,37
+1056,Geoprocessamento,37
+1057,Gestão de Pessoas,37
+1058,Marketing em Agronegócios,37
+1059,Tecnologia de Produtos de Origem Vegetal,37
+1060,Desenvolvimento de Produtos Agroindustriais,37
+1061,Logística Aplicada,37
+1062,Mercados e Comercialização,37
+1063,Projetos em Agronegócio,37
+1064,Agroclimatologia,38
+1065,Economia Aplicada,38
+1066,Introdução ao Agronegócio,38
+1067,Produção Animal I,38
+1068,Produção Vegetal I,38
+1069,"Sociedade, Conhecimento e Cultura",38
+1070,Administração e Estratégia,38
+1071,Construção do Conhecimento Científico,38
+1072,Matemática Aplicada,38
+1073,Produção Animal II,38
+1074,Produção Vegetal II,38
+1075,Projetos e Relatórios Técnicos,38
+1076,Transformações no Processo Produtivo,38
+1077,Custos,38
+1078,Estatística Aplicada,38
+1079,Gestão Ambiental em Agronegocio,38
+1080,Gestão da Produção e Qualidade,38
+1081,Tecnologia de Produtos de Origem Animal,38
+1082,Empreendedorismo e Inovação em Agronegócio,38
+1083,Finanças,38
+1084,Geoprocessamento,38
+1085,Gestão de Pessoas,38
+1086,Marketing em Agronegócios,38
+1087,Tecnologia de Produtos de Origem Vegetal,38
+1088,Desenvolvimento de Produtos Agroindustriais,38
+1089,Logística Aplicada,38
+1090,Mercados e Comercialização,38
+1091,Projetos em Agronegócio,38
+1092,Agroclimatologia,39
+1093,Economia Aplicada,39
+1094,Introdução ao Agronegócio,39
+1095,Produção Animal I,39
+1096,Produção Vegetal I,39
+1097,"Sociedade, Conhecimento e Cultura",39
+1098,Administração e Estratégia,39
+1099,Construção do Conhecimento Científico,39
+1100,Matemática Aplicada,39
+1101,Produção Animal II,39
+1102,Produção Vegetal II,39
+1103,Projetos e Relatórios Técnicos,39
+1104,Transformações no Processo Produtivo,39
+1105,Custos,39
+1106,Estatística Aplicada,39
+1107,Gestão Ambiental em Agronegocio,39
+1108,Gestão da Produção e Qualidade,39
+1109,Tecnologia de Produtos de Origem Animal,39
+1110,Empreendedorismo e Inovação em Agronegócio,39
+1111,Finanças,39
+1112,Geoprocessamento,39
+1113,Gestão de Pessoas,39
+1114,Marketing em Agronegócios,39
+1115,Tecnologia de Produtos de Origem Vegetal,39
+1116,Desenvolvimento de Produtos Agroindustriais,39
+1117,Logística Aplicada,39
+1118,Mercados e Comercialização,39
+1119,Projetos em Agronegócio,39
+1120,Agroclimatologia,40
+1121,Economia Aplicada,40
+1122,Introdução ao Agronegócio,40
+1123,Produção Animal I,40
+1124,Produção Vegetal I,40
+1125,"Sociedade, Conhecimento e Cultura",40
+1126,Administração e Estratégia,40
+1127,Construção do Conhecimento Científico,40
+1128,Matemática Aplicada,40
+1129,Produção Animal II,40
+1130,Produção Vegetal II,40
+1131,Projetos e Relatórios Técnicos,40
+1132,Transformações no Processo Produtivo,40
+1133,Custos,40
+1134,Estatística Aplicada,40
+1135,Gestão Ambiental em Agronegocio,40
+1136,Gestão da Produção e Qualidade,40
+1137,Tecnologia de Produtos de Origem Animal,40
+1138,Empreendedorismo e Inovação em Agronegócio,40
+1139,Finanças,40
+1140,Geoprocessamento,40
+1141,Gestão de Pessoas,40
+1142,Marketing em Agronegócios,40
+1143,Tecnologia de Produtos de Origem Vegetal,40
+1144,Desenvolvimento de Produtos Agroindustriais,40
+1145,Logística Aplicada,40
+1146,Mercados e Comercialização,40
+1147,Projetos em Agronegócio,40
+1148,Agroclimatologia,41
+1149,Economia Aplicada,41
+1150,Introdução ao Agronegócio,41
+1151,Produção Animal I,41
+1152,Produção Vegetal I,41
+1153,"Sociedade, Conhecimento e Cultura",41
+1154,Administração e Estratégia,41
+1155,Construção do Conhecimento Científico,41
+1156,Matemática Aplicada,41
+1157,Produção Animal II,41
+1158,Produção Vegetal II,41
+1159,Projetos e Relatórios Técnicos,41
+1160,Transformações no Processo Produtivo,41
+1161,Custos,41
+1162,Estatística Aplicada,41
+1163,Gestão Ambiental em Agronegocio,41
+1164,Gestão da Produção e Qualidade,41
+1165,Tecnologia de Produtos de Origem Animal,41
+1166,Empreendedorismo e Inovação em Agronegócio,41
+1167,Finanças,41
+1168,Geoprocessamento,41
+1169,Gestão de Pessoas,41
+1170,Marketing em Agronegócios,41
+1171,Tecnologia de Produtos de Origem Vegetal,41
+1172,Desenvolvimento de Produtos Agroindustriais,41
+1173,Logística Aplicada,41
+1174,Mercados e Comercialização,41
+1175,Projetos em Agronegócio,41
+1176,Agroclimatologia,42
+1177,Economia Aplicada,42
+1178,Introdução ao Agronegócio,42
+1179,Produção Animal I,42
+1180,Produção Vegetal I,42
+1181,"Sociedade, Conhecimento e Cultura",42
+1182,Administração e Estratégia,42
+1183,Construção do Conhecimento Científico,42
+1184,Matemática Aplicada,42
+1185,Produção Animal II,42
+1186,Produção Vegetal II,42
+1187,Projetos e Relatórios Técnicos,42
+1188,Transformações no Processo Produtivo,42
+1189,Custos,42
+1190,Estatística Aplicada,42
+1191,Gestão Ambiental em Agronegocio,42
+1192,Gestão da Produção e Qualidade,42
+1193,Tecnologia de Produtos de Origem Animal,42
+1194,Empreendedorismo e Inovação em Agronegócio,42
+1195,Finanças,42
+1196,Geoprocessamento,42
+1197,Gestão de Pessoas,42
+1198,Marketing em Agronegócios,42
+1199,Tecnologia de Produtos de Origem Vegetal,42
+1200,Desenvolvimento de Produtos Agroindustriais,42
+1201,Logística Aplicada,42
+1202,Mercados e Comercialização,42
+1203,Projetos em Agronegócio,42

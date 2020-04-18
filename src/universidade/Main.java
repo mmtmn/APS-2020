@@ -12,7 +12,7 @@ public class Main {
 		 * Os métodos retornam um objecto respetivo a o que está sendo pesquisado. 
 		 * Por exemplo, os métodos .searchAlunoById e .searchAlunoByNome, retornam um objeto Aluno com os atributos
 		 * .id, .nome e .curso (.curso é um objeto da classe curso).
-		 * */
+		 */ 
 		
 		System.out.println("---------- Pesquisando um Aluno ----------");
 		db.searchAlunoById("100").imprimirDados(); //Método .searchAlunoById(id) para pesquisar aluno por sua ID
@@ -31,6 +31,9 @@ public class Main {
 	
 		System.out.println("\n---------- Pesquisando uma Nota ----------");
 		db.searchNotaById("365").imprimirDados(); //Método .searchNotaById(id) para pesquisar uma nota de um aluno por sua ID
+		
+	
+		
 	}
 	
 	
