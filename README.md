@@ -22,6 +22,8 @@ Para rodar o projeto:
 
 `git clone`
 
+`cd src2`
+
 `javac Menu.java`
 
 `java Menu`
