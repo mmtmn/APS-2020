@@ -1,0 +1,12 @@
+id,Curso,Aluno,Nivel,Ano,NotaBimestral,NotaSemestral,Exame
+15,Biologia,aluno15,Graduacao,1ano,10,10
+16,Biologia,aluno16,Graduacao,1ano,9,10
+17,Biologia,aluno17,Graduacao,2ano,10,5
+18,Biologia,aluno18,Graduacao,2ano,1,2,4
+19,Biologia,aluno19,Graduacao,3ano,6,5,10
+20,Biologia,aluno20,Graduacao,4ano,3,2,0
+22,Biologia,aluno21,Doutorado,2ano,10,10
+23,Biologia,aluno22,Doutorado,2ano,10,10
+24,Biologia,aluno23,Doutorado,2ano,10,8
+25,Biologia,aluno24,Doutorado,2ano,7,10
+26,Biologia,aluno25,Doutorado,2ano,5,10
