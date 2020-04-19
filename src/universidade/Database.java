@@ -12,50 +12,76 @@ public class Database {
 	}
 
 	public Aluno searchAlunoById(String q) {
-		String [] dados = search("aluno", "cod_aluno", q);
-		return (new Aluno(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
+		Map<Integer, String[]> dados = search("aluno", "cod_aluno", q);
+		String[] row = dados.get(0);
+		return new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+		
 	}
 	
-	public Aluno searchAlunoByNome(String q) {
-		String [] dados = search("aluno", "nome", q);
-		return (new Aluno(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
+	public Aluno[] searchAlunoByNome(String q) {
+		Map<Integer, String[]> dados = search("aluno", "nome", q);
+		Aluno[] alunos = new Aluno[dados.size()] ;
+		
+		for (int i = 0; i < dados.size(); i++) {
+			String[] row = dados.get(i); 
+			alunos[i] = new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+		}
+		return alunos;
+		
 	}
 	
-	public Curso searchCursoByNome(String q) {
-		String [] dados = search("curso", "nome", q);
-		return (new Curso(Integer.parseInt(dados[0]), dados[1], dados[2]));
+	public Disciplina searchDisciplinaById(String q) {
+		Map<Integer, String[]> dados = search("disciplina", "cod_disciplina", q);
+		String[] row = dados.get(0);
+		return new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+		
+	}
+	
+	public Disciplina[] searchDisciplinaByNome(String q) {
+		Map<Integer, String[]> dados = search("disciplina", "nome", q);
+		Disciplina[] disciplinas = new Disciplina[dados.size()] ;
+		
+		for (int i = 0; i < dados.size(); i++) {
+			String[] row = dados.get(i); 
+			disciplinas[i] = new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+		}
+		return disciplinas;
+		
+	}
+	
+	public Curso[] searchCursoByNome(String q) {
+		Map<Integer, String[]> dados = search("curso", "nome", q);
+		Curso[] cursos = new Curso[dados.size()] ;
+		
+		for (int i = 0; i < dados.size(); i++) {
+			String[] row = dados.get(i); 
+			cursos[i] = new Curso(Integer.parseInt(row[0]), row[1], row[2]);
+		}
+		return cursos;
 	}
 
 	public Curso searchCursoById(String q) {
-		String [] dados = search("curso", "cod_curso", q);
-		return (new Curso(Integer.parseInt(dados[0]), dados[1], dados[2]));
+		Map<Integer, String[]> dados = search("curso", "cod_curso", q);
+		String[] row = dados.get(0);
+		return new Curso(Integer.parseInt(row[0]), row[1], row[2]);
+		
 	}
-
-	public Disciplina searchDisciplinaById(String q) {
-		String [] dados = search("disciplina", "cod_disciplina", q);
-		return (new Disciplina(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
-	}
-
-	public Disciplina searchDisciplinaByNome(String q) {
-		String [] dados = search("disciplina", "nome", q);
-		return (new Disciplina(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
-	}
-
 	
 	public Nota searchNotaById(String q) {
-		String [] dados = search("nota", "cod_nota", q);
-		return (new Nota(Integer.parseInt(dados[0]), 
-				Double.parseDouble(dados[1]),
-				Double.parseDouble(dados[2]),
-				Double.parseDouble(dados[3]),
-				Integer.parseInt(dados[4]),
-				Integer.parseInt(dados[5]),
-				searchDisciplinaById(dados[6]),
-				searchAlunoById(dados[7])));
+		Map<Integer, String[]> dados = search("nota", "cod_nota", q);
+		String[] row = dados.get(0);
+		return (new Nota(Integer.parseInt(row[0]), 
+				Double.parseDouble(row[1]),
+				Double.parseDouble(row[2]),
+				Double.parseDouble(row[3]),
+				Integer.parseInt(row[4]),
+				Integer.parseInt(row[5]),
+				searchDisciplinaById(row[6]),
+				searchAlunoById(row[7])));
 	}
 	
-	private String[] search(String tabela, String coluna, String q) {
-			
+	private static Map<Integer, String[]> search(String tabela, String coluna, String q) {
+		
 		File file = new File("database/" + tabela + ".csv");
 		
 		try (Scanner inputStream = new Scanner(file)) {
@@ -68,21 +94,24 @@ public class Database {
 			for(int i = 0; dados.length > i; i++) {
 				colunas.put(dados[i], i);
 			}
+						
+			Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
 			
 			while (inputStream.hasNext()) {				
 				data = inputStream.nextLine();
 				dados = data.split(",");
 				
-				if (dados[colunas.get(coluna)].contentEquals(q)) {
-					return (dados);
+				if (dados[colunas.get(coluna)].matches(".*" + q + ".*")) {
+					resultados.put(resultados.size(), dados);
 				}
 				
-			}	
+			}
+			return resultados;
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
+		} 
 		
 		return null;
 	}
-
+	
 }

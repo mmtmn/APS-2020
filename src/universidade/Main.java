@@ -4,37 +4,48 @@ public class Main {
 	
 	public static void main(String args[]) {
 		
-		Database db = new Database();
+		Database db2 = new Database();
 		
 		/*
-		 * Exemplos de como utilizar os métodos da classe Database, para acessar informações do banco de dados
+		 * Exemplos de como utilizar os mï¿½todos da classe Database, para acessar informaï¿½ï¿½es do banco de dados
 		 * 
-		 * Os métodos retornam um objecto respetivo a o que está sendo pesquisado. 
-		 * Por exemplo, os métodos .searchAlunoById e .searchAlunoByNome, retornam um objeto Aluno com os atributos
-		 * .id, .nome e .curso (.curso é um objeto da classe curso).
+		 * Os mï¿½todos retornam um objecto respetivo a o que estï¿½ sendo pesquisado. 
+		 * Por exemplo, os mï¿½todos .searchAlunoById e .searchAlunoByNome, retornam um objeto Aluno com os atributos
+		 * .id, .nome e .curso (.curso ï¿½ um objeto da classe curso).
 		 */ 
 		
-		System.out.println("---------- Pesquisando um Aluno ----------");
-		db.searchAlunoById("100").imprimirDados(); //Método .searchAlunoById(id) para pesquisar aluno por sua ID
-		System.out.println("--------------------");
-		db.searchAlunoByNome("Noah Oliveira").imprimirDados(); //Método .searchAlunoByNome(id) para pesquisar aluno por seu nome
+		System.out.println("------ Pesquisando Aluno com ID igual a 100 ------");
+		db2.searchAlunoById("100").imprimirDados();
+		System.out.println("\n------ Pesquisando Aluno com nome igual a Lucas ------");
+		for (Aluno aluno : db2.searchAlunoByNome("JoÃ£o Lucas")) {
+			aluno.imprimirDados();
+			System.out.println("*********");	
+		}	
 		
-		System.out.println("\n---------- Pesquisando um Curso ----------");
-		db.searchCursoById("5").imprimirDados(); //Método .searchCursoById(id) para pesquisar curso por sua ID
-		System.out.println("--------------------");
-		db.searchCursoByNome("Sistemas Para Internet").imprimirDados(); //Método .searchCursoByNome(id) para pesquisar curso por seu nome
+		System.out.println("\n------ Pesquisando Curso com ID igual a 5 ------");
+		db2.searchCursoById("5").imprimirDados();
+		System.out.println("\n------ Pesquisando Curso com nome igual a CiÃªncia ------");
+		for (Curso curso : db2.searchCursoByNome("CiÃªncia")) {
+			curso.imprimirDados();
+			System.out.println("*********");	
+		}		
+		
+		System.out.println("\n------ Pesquisando Disicplina com ID igual a 5 ------");
+		db2.searchDisciplinaById("66").imprimirDados();
+		System.out.println("\n------ Pesquisando Disicplina com nome igual a Geoprocessamento ------");
+		for (Disciplina disciplina : db2.searchDisciplinaByNome("ProduÃ§Ã£o Vegetal II")) {
+			disciplina.imprimirDados();
+			System.out.println("*********");	
+		}	
 
-		System.out.println("\n---------- Pesquisando uma Disciplina ----------");
-		db.searchDisciplinaById("66").imprimirDados(); //Método .searchCursoById(id) para pesquisar curso por sua ID
-		System.out.println("--------------------");
-		db.searchDisciplinaByNome("Geoprocessamento").imprimirDados(); //Método .searchCursoByNome(id) para pesquisar curso por seu nome
-	
-		System.out.println("\n---------- Pesquisando uma Nota ----------");
-		db.searchNotaById("365").imprimirDados(); //Método .searchNotaById(id) para pesquisar uma nota de um aluno por sua ID
+		System.out.println("\n------ Pesquisando Nota com ID igual a 365 ------");
+		db2.searchNotaById("365").imprimirDados();
 		
-	
-		
+		/*
+		System.out.println("\n---------- Inserindo um aluno no BD ----------");
+        String[] q = {"1198", "Michael Scofield", "5"}; 
+		System.out.println(db2.insert("aluno", q));*/			
+				
 	}
-	
-	
+		
 }
