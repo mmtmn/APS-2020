@@ -2,6 +2,8 @@ package universidade;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Database {
 	
@@ -10,7 +12,7 @@ public class Database {
 	}
 
 	public Aluno searchAlunoById(String q) {
-		String [] dados = search("aluno", "id", q);
+		String [] dados = search("aluno", "cod_aluno", q);
 		return (new Aluno(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
 	}
 	
@@ -25,12 +27,12 @@ public class Database {
 	}
 
 	public Curso searchCursoById(String q) {
-		String [] dados = search("curso", "id", q);
+		String [] dados = search("curso", "cod_curso", q);
 		return (new Curso(Integer.parseInt(dados[0]), dados[1], dados[2]));
 	}
 
 	public Disciplina searchDisciplinaById(String q) {
-		String [] dados = search("disciplina", "id", q);
+		String [] dados = search("disciplina", "cod_disciplina", q);
 		return (new Disciplina(Integer.parseInt(dados[0]), dados[1], searchCursoById(dados[2])));
 	}
 
@@ -41,7 +43,7 @@ public class Database {
 
 	
 	public Nota searchNotaById(String q) {
-		String [] dados = search("nota", "id", q);
+		String [] dados = search("nota", "cod_nota", q);
 		return (new Nota(Integer.parseInt(dados[0]), 
 				Double.parseDouble(dados[1]),
 				Double.parseDouble(dados[2]),
@@ -55,28 +57,27 @@ public class Database {
 	private String[] search(String tabela, String coluna, String q) {
 			
 		File file = new File("database/" + tabela + ".csv");
-		Scanner inputStream;
 		
-		try {
+		try (Scanner inputStream = new Scanner(file)) {
 			
-			inputStream = new Scanner(file);
+			Map<String,Integer> colunas = new HashMap<String,Integer>();
 			
-			while (inputStream.hasNext()) {
+			String data = inputStream.nextLine();
+			String[] dados = data.split(",");
+			
+			for(int i = 0; dados.length > i; i++) {
+				colunas.put(dados[i], i);
+			}
+			
+			while (inputStream.hasNext()) {				
+				data = inputStream.nextLine();
+				dados = data.split(",");
 				
-				String data = inputStream.nextLine();
-				String[] dados = data.split(",");
-				
-				if (coluna.equals("id")) {
-					if (dados[0].contentEquals(q)) {
-						return (dados);
-					}
-				}else if (coluna.equals("nome")) {
-					if (dados[1].contentEquals(q)) {
-						return (dados);
-					}
+				if (dados[colunas.get(coluna)].contentEquals(q)) {
+					return (dados);
 				}
+				
 			}	
-			inputStream.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
