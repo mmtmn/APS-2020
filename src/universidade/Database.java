@@ -104,6 +104,10 @@ public class Database {
 		
 	}
 	
+	public  Boolean alter(String tabela, String id, String q) {
+		return false;
+	}
+	
 	private Map<Integer, String[]> search(String tabela, String coluna, String q) {
 		
 		File file = new File(getPath(tabela));
@@ -130,16 +134,19 @@ public class Database {
 		return null;
 	}
 	
-	private String autoIncrement(String tabela) {
+	public String autoIncrement(String tabela) {
 
 		File file = new File(getPath(tabela));
 		
 		try (Scanner inputStream = new Scanner(file)) {
 					
-			String lastId = "-1";					
+			String lastId = "-1";
+			inputStream.nextLine();
 			while (inputStream.hasNext()) {				
 				String[] dados = inputStream.nextLine().split(",");
-				lastId = dados[0];
+				if (Integer.parseInt(lastId) < Integer.parseInt(dados[0])) {
+					lastId = dados[0];
+				}
 			}
 			
 			return Integer.toString((Integer.parseInt(lastId) + 1));
