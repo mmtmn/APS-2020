@@ -1,6 +1,10 @@
 package universidade;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
@@ -80,26 +84,38 @@ public class Database {
 				searchAlunoById(row[7])));
 	}
 	
-	private static Map<Integer, String[]> search(String tabela, String coluna, String q) {
+	public Boolean insert(String tabela, String q) {
 		
-		File file = new File("database/" + tabela + ".csv");
+		Writer output;
+		try {
+			Map<String,Integer> colunas = getColunas(tabela);
+			if (colunas.size() - 1 == q.split(",").length) {
+				output = new BufferedWriter(new FileWriter(getPath(tabela), true));
+				output.append("\n" + autoIncrement(tabela) + "," + q);
+				output.close();
+				return true;
+			} else {
+				return false;
+			}
+		} catch(IOException e){
+			e.printStackTrace();
+		}
+		return false;
+		
+	}
+	
+	private Map<Integer, String[]> search(String tabela, String coluna, String q) {
+		
+		File file = new File(getPath(tabela));
 		
 		try (Scanner inputStream = new Scanner(file)) {
 			
-			Map<String,Integer> colunas = new HashMap<String,Integer>();
-			
-			String data = inputStream.nextLine();
-			String[] dados = data.split(",");
-			
-			for(int i = 0; dados.length > i; i++) {
-				colunas.put(dados[i], i);
-			}
+			Map<String,Integer> colunas = getColunas(tabela);
 						
 			Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
 			
-			while (inputStream.hasNext()) {				
-				data = inputStream.nextLine();
-				dados = data.split(",");
+			while (inputStream.hasNext()) {
+				String[] dados = inputStream.nextLine().split(",");
 				
 				if (dados[colunas.get(coluna)].matches(".*" + q + ".*")) {
 					resultados.put(resultados.size(), dados);
@@ -111,6 +127,51 @@ public class Database {
 			e.printStackTrace();
 		} 
 		
+		return null;
+	}
+	
+	private String autoIncrement(String tabela) {
+
+		File file = new File(getPath(tabela));
+		
+		try (Scanner inputStream = new Scanner(file)) {
+					
+			String lastId = "-1";					
+			while (inputStream.hasNext()) {				
+				String[] dados = inputStream.nextLine().split(",");
+				lastId = dados[0];
+			}
+			
+			return Integer.toString((Integer.parseInt(lastId) + 1));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} 
+		
+		return null;
+		
+	}
+	
+	private String getPath(String tabela) {
+		return "database/" + tabela + ".csv";
+	}
+	
+	private Map<String,Integer> getColunas(String tabela) {
+		
+		File file = new File(getPath(tabela));
+		
+		try (Scanner inputStream = new Scanner(file)) {
+			Map<String,Integer> colunas = new HashMap<String,Integer>();
+			
+			String data = inputStream.nextLine();
+			String[] dados = data.split(",");
+			
+			for(int i = 0; dados.length > i; i++) {
+				colunas.put(dados[i], i);
+			}		
+			return colunas;
+		} catch(IOException e){
+			e.printStackTrace();
+		}
 		return null;
 	}
 	

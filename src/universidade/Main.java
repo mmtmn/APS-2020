@@ -41,10 +41,10 @@ public class Main {
 		System.out.println("\n------ Pesquisando Nota com ID igual a 365 ------");
 		db.searchNotaById("365").imprimirDados();
 		
-		/*
+		
 		System.out.println("\n---------- Inserindo um aluno no BD ----------");
-        String[] q = {"1198", "Michael Scofield", "5"}; 
-		System.out.println(db2.insert("aluno", q));*/			
+		System.out.println(db.insert("aluno", "Alan Turing, 5"));	
+
 				
 	}
 		
