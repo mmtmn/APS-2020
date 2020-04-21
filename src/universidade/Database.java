@@ -104,8 +104,46 @@ public class Database {
 		
 	}
 	
-	public  Boolean alter(String tabela, String id, String q) {
-		return false;
+	public Boolean alter(String tabela, String id, String q) {
+		return (delete(tabela, id) && insert(tabela, q)) ? true : false;
+	}
+	
+	public Boolean delete(String tabela, String id) {
+		File file = new File(getPath(tabela));
+		Boolean flag = false;
+		
+		try (Scanner inputStream = new Scanner(file)) {
+			
+			String resultados = inputStream.nextLine();;
+			String dados;
+			
+			while (inputStream.hasNext()) {
+				
+				dados = inputStream.nextLine();
+			
+				if (!dados.split(",")[0].equals(id)) {
+					resultados = resultados + "\n" + dados;
+				}else {
+					/*Se o código entrar nesse else, é um sinal que foi encontrado um id igual ao que está tentando ser deletado
+					por isso define flag igual true, indicando que um item foi excluido*/
+					flag = true;
+				}
+											
+			}
+			
+			Writer output;
+			try {
+				output = new BufferedWriter(new FileWriter(getPath(tabela)));
+				output.append(resultados);
+				output.close();
+			} catch(IOException e) {
+				e.printStackTrace();
+			}			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} 
+		
+		return (flag) ? true : false;
 	}
 	
 	private Map<Integer, String[]> search(String tabela, String coluna, String q) {
@@ -134,7 +172,7 @@ public class Database {
 		return null;
 	}
 	
-	public String autoIncrement(String tabela) {
+	private String autoIncrement(String tabela) {
 
 		File file = new File(getPath(tabela));
 		
