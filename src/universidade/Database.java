@@ -1,10 +1,6 @@
 package universidade;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
@@ -83,96 +79,49 @@ public class Database {
 				searchDisciplinaById(row[6]),
 				searchAlunoById(row[7])));
 	}
-	
+		
 	public Boolean insert(String tabela, String q) {
 		
-		Writer output;
-		try {
-			Map<String,Integer> colunas = getColunas(tabela);
-			if (colunas.size() - 1 == q.split(",").length) {
-				output = new BufferedWriter(new FileWriter(getPath(tabela), true));
-				output.append("\n" + autoIncrement(tabela) + "," + q);
-				output.close();
-				return true;
-			} else {
-				return false;
-			}
-		} catch(IOException e){
-			e.printStackTrace();
-		}
+		DataFrame df = new DataFrame(getPath(tabela));
+		
+		String [] arr = q.split(",");
+		int id = autoIncrement(tabela);
+				
+		if (df.countCols() == arr.length+1) {
+			df.values.put(id, (id + "," + q).split(","));
+			return df.to_csv(getPath(tabela));
+		}	
 		return false;
 		
 	}
 	
-	public Boolean alter(String tabela, String id, String q) {
+	public Boolean alter(String tabela, int id, String q) {
 		return (delete(tabela, id) && insert(tabela, q)) ? true : false;
 	}
 	
-	public Boolean delete(String tabela, String id) {
-		File file = new File(getPath(tabela));
-		Boolean flag = false;
+	public Boolean delete(String tabela, int id) {
+		DataFrame df = new DataFrame(getPath(tabela));
 		
-		try (Scanner inputStream = new Scanner(file)) {
-			
-			String resultados = inputStream.nextLine();;
-			String dados;
-			
-			while (inputStream.hasNext()) {
-				
-				dados = inputStream.nextLine();
-			
-				if (!dados.split(",")[0].equals(id)) {
-					resultados = resultados + "\n" + dados;
-				}else {
-					/*Se o código entrar nesse else, é um sinal que foi encontrado um id igual ao que está tentando ser deletado
-					por isso define flag igual true, indicando que um item foi excluido*/
-					flag = true;
-				}
-											
-			}
-			
-			Writer output;
-			try {
-				output = new BufferedWriter(new FileWriter(getPath(tabela)));
-				output.append(resultados);
-				output.close();
-			} catch(IOException e) {
-				e.printStackTrace();
-			}			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} 
+		if(df.values.remove(id) == null)
+			return false;
+		return df.to_csv(getPath(tabela));
 		
-		return (flag) ? true : false;
 	}
+	
 	
 	private Map<Integer, String[]> search(String tabela, String coluna, String q) {
-		
-		File file = new File(getPath(tabela));
-		
-		try (Scanner inputStream = new Scanner(file)) {
-			
-			Map<String,Integer> colunas = getColunas(tabela);
-						
-			Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
-			
-			while (inputStream.hasNext()) {
-				String[] dados = inputStream.nextLine().split(",");
-				
-				if (dados[colunas.get(coluna)].matches(".*" + q + ".*")) {
-					resultados.put(resultados.size(), dados);
-				}
-				
-			}
-			return resultados;
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} 
-		
-		return null;
+									
+		DataFrame df = new DataFrame(getPath(tabela));
+		Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
+
+		for (String[] row : df.values.values())
+			if (row[df.columnsMap.get(coluna)].matches(".*" + q + ".*")) 
+				resultados.put(resultados.size(), row);		
+
+		return resultados;
 	}
-	
-	private String autoIncrement(String tabela) {
+		
+	private int autoIncrement(String tabela) {
 
 		File file = new File(getPath(tabela));
 		
@@ -187,37 +136,17 @@ public class Database {
 				}
 			}
 			
-			return Integer.toString((Integer.parseInt(lastId) + 1));
+			return Integer.parseInt(lastId) + 1;
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} 
 		
-		return null;
-		
+		return 0;
 	}
 	
 	private String getPath(String tabela) {
 		return "database/" + tabela + ".csv";
 	}
 	
-	private Map<String,Integer> getColunas(String tabela) {
-		
-		File file = new File(getPath(tabela));
-		
-		try (Scanner inputStream = new Scanner(file)) {
-			Map<String,Integer> colunas = new HashMap<String,Integer>();
-			
-			String data = inputStream.nextLine();
-			String[] dados = data.split(",");
-			
-			for(int i = 0; dados.length > i; i++) {
-				colunas.put(dados[i], i);
-			}		
-			return colunas;
-		} catch(IOException e){
-			e.printStackTrace();
-		}
-		return null;
-	}
 	
 }

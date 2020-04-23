@@ -5,16 +5,7 @@ public class Main {
 	public static void main(String args[]) {
 		
 		Database db = new Database();
-		
-		/*
-		 * Exemplos de como utilizar os m�todos da classe Database, para acessar informa��es do banco de dados
-		 * 
-		 * Os m�todos retornam um objecto respetivo a o que est� sendo pesquisado. 
-		 * Por exemplo, os m�todos .searchAlunoById e .searchAlunoByNome, retornam um objeto Aluno com os atributos
-		 * .id, .nome e .curso (.curso � um objeto da classe curso).
-		 */ 
-		
-		
+			
 		System.out.println("------ Pesquisando Aluno com ID igual a 100 ------");
 		db.searchAlunoById("100").imprimirDados();
 		System.out.println("\n------ Pesquisando Aluno com nome igual a João Lucas ------");
@@ -32,7 +23,7 @@ public class Main {
 
 		System.out.println("\n------ Pesquisando Nota com ID igual a 365 ------");
 		db.searchNotaById("365").imprimirDados();
-		
+				
 
 		System.out.println("\n---------- Inserindo um aluno no BD ----------");
 		System.out.println(db.insert("aluno", "Alan Turing,5"));
@@ -41,19 +32,20 @@ public class Main {
 		imprimirLista(db.searchAlunoByNome("Alan Turing"));
 		
 		System.out.println("\n---------- Alterando o curso do Aluno Id 700 ----------");
-		System.out.println(db.alter("aluno", "700", "Alan Turing,10"));
+		System.out.println(db.alter("aluno", 700, "Alan Turing,10"));
 		
 		System.out.println("\n------ Pesquisando Aluno com nome igual a Alan Turing ------");
 		imprimirLista(db.searchAlunoByNome("Alan Turing"));
 
 		System.out.println("\n---------- Deletando dados do Aluno de id 700 ----------");
-		System.out.println(db.delete("aluno", "700"));
-		
+		System.out.println(db.delete("aluno", 700));
+
 		System.out.println("\n------ Pesquisando Aluno com nome igual a Alan Turing ------");
 		imprimirLista(db.searchAlunoByNome("Alan Turing"));
 		
-		
-				
+		System.out.println("\n");
+			
+						
 	}
 	
 	public static void imprimirLista(Tabela[] alunos) {
