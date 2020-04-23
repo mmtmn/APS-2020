@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class DataFrame {
 	
-	//public String[] columns;
 	public Map<String,Integer> columnsMap;
 	public Map<Integer,String[]> values;
 	public String[] columns;	
@@ -29,8 +28,7 @@ public class DataFrame {
 			for (int i = 0; i < dados.length; i++) {
 				columnsMap.put(dados[i], i);
 			}
-			
-			
+						
 			String [] row;
 			while(inputStream.hasNext()) {
 				data = inputStream.nextLine();
@@ -40,8 +38,7 @@ public class DataFrame {
 								
 		} catch(IOException e){
 			e.printStackTrace();
-		}
-					
+		}			
 	}
 
 	public boolean to_csv(String path) {
@@ -75,7 +72,5 @@ public class DataFrame {
 	public int countCols() {
 		return columnsMap.values().size();
 	}
-	
-
-		
+			
 }
