@@ -1,20 +1,35 @@
 package universidade;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Database {
 	
-	public Database() {
-		
+	private String path;
+	
+	public Database(String path) {
+		this.path = path;
 	}
 
-	public Aluno searchAlunoById(String q) {
+	public Aluno searchAlunoById(int q) {
 		Map<Integer, String[]> dados = search("aluno", "cod_aluno", q);
 		String[] row = dados.get(0);
-		return new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+		return new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(Integer.parseInt(row[2])));
+	}
+	
+	public Table searchSTableById(String q) {
+		Map<Integer, Map<String, String>> dados = searchv2("aluno", "cod_aluno", q);
+		return new Table(dados.get(0));
+	}
+	
+	public Table[] searchTableByNome(String q) {
+		Map<Integer, Map<String, String>> dados = searchv2("aluno", "nome", q);
+		Table[] alunos = new Table[dados.size()] ;
+		
+		for (int i = 0; i < dados.size(); i++) {
+			Map<String, String> row = dados.get(i); 
+			alunos[i] = new Table(row);
+		}
+		return alunos;
 		
 	}
 	
@@ -24,17 +39,27 @@ public class Database {
 		
 		for (int i = 0; i < dados.size(); i++) {
 			String[] row = dados.get(i); 
-			alunos[i] = new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+			alunos[i] = new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(Integer.parseInt(row[2])));
 		}
 		return alunos;
 		
 	}
 	
-	public Disciplina searchDisciplinaById(String q) {
+	public Disciplina[] seachDisciplinaByCursoId(String q) {
+		Map<Integer, String[]> dados = search("disciplina", "cod_curso", q);
+		Disciplina[] disciplina = new Disciplina[dados.size()] ;
+		
+		for (int i = 0; i < dados.size(); i++) {
+			String[] row = dados.get(i); 
+			disciplina[i] = searchDisciplinaById(Integer.parseInt(row[0]));
+		}
+		return disciplina;
+	}
+	
+	public Disciplina searchDisciplinaById(int q) {
 		Map<Integer, String[]> dados = search("disciplina", "cod_disciplina", q);
 		String[] row = dados.get(0);
-		return new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
-		
+		return new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(Integer.parseInt(row[2])));
 	}
 	
 	public Disciplina[] searchDisciplinaByNome(String q) {
@@ -43,7 +68,7 @@ public class Database {
 		
 		for (int i = 0; i < dados.size(); i++) {
 			String[] row = dados.get(i); 
-			disciplinas[i] = new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+			disciplinas[i] = searchDisciplinaById(Integer.parseInt(row[0]));
 		}
 		return disciplinas;
 		
@@ -60,14 +85,25 @@ public class Database {
 		return cursos;
 	}
 
-	public Curso searchCursoById(String q) {
+	public Curso searchCursoById(int q) {
 		Map<Integer, String[]> dados = search("curso", "cod_curso", q);
 		String[] row = dados.get(0);
 		return new Curso(Integer.parseInt(row[0]), row[1], row[2]);
 		
 	}
 	
-	public Nota searchNotaById(String q) {
+	public Nota[] searchNotaByAlunoId(int q) {
+		Map<Integer, String[]> dados = search("nota", "cod_aluno", q);
+		Nota[] notas = new Nota[dados.size()] ;
+		
+		for (int i = 0; i < dados.size(); i++) {
+			String[] row = dados.get(i); 
+			notas[i] = searchNotaById(Integer.parseInt(row[0]));
+		}
+		return notas;
+	}
+	
+	public Nota searchNotaById(int q) {
 		Map<Integer, String[]> dados = search("nota", "cod_nota", q);
 		String[] row = dados.get(0);
 		return (new Nota(Integer.parseInt(row[0]), 
@@ -76,8 +112,8 @@ public class Database {
 				Double.parseDouble(row[3]),
 				Integer.parseInt(row[4]),
 				Integer.parseInt(row[5]),
-				searchDisciplinaById(row[6]),
-				searchAlunoById(row[7])));
+				searchDisciplinaById(Integer.parseInt(row[6])),
+				searchAlunoById(Integer.parseInt(row[7]))));
 	}
 		
 	public Boolean insert(String tabela, String q) {
@@ -85,7 +121,7 @@ public class Database {
 		DataFrame df = new DataFrame(getPath(tabela));
 		
 		String [] arr = q.split(",");
-		int id = autoIncrement(tabela);
+		int id = autoIncrement(df);
 				
 		if (df.countCols() == arr.length+1) {
 			df.values.put(id, (id + "," + q).split(","));
@@ -108,44 +144,57 @@ public class Database {
 		
 	}
 	
-	
-	private Map<Integer, String[]> search(String tabela, String coluna, String q) {
+	public Map<Integer, String[]> search(String tabela, String coluna, String q) {
 									
 		DataFrame df = new DataFrame(getPath(tabela));
 		Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
 
 		for (String[] row : df.values.values())
-			if (row[df.columnsMap.get(coluna)].matches(".*" + q + ".*")) 
-				resultados.put(resultados.size(), row);		
+			if (row[df.columnsMap.get(coluna)].matches(".*" + q + ".*")) { 
+				resultados.put(resultados.size(), row);
+			}
+		
+		return resultados;
+	}	
+	
+	public Map<Integer, String[]> search(String tabela, String coluna, int q) {
+									
+		DataFrame df = new DataFrame(getPath(tabela));
+		Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
 
+		for (String[] row : df.values.values())
+			if (Integer.parseInt(row[df.columnsMap.get(coluna)]) == q) { 
+				resultados.put(resultados.size(), row);
+			}
+		
 		return resultados;
 	}
 		
-	private int autoIncrement(String tabela) {
-
-		File file = new File(getPath(tabela));
+	private Map<Integer, Map<String, String>> searchv2(String tabela, String coluna, String q) {
 		
-		try (Scanner inputStream = new Scanner(file)) {
-					
-			String lastId = "-1";
-			inputStream.nextLine();
-			while (inputStream.hasNext()) {				
-				String[] dados = inputStream.nextLine().split(",");
-				if (Integer.parseInt(lastId) < Integer.parseInt(dados[0])) {
-					lastId = dados[0];
-				}
+		DataFrame df = new DataFrame(getPath(tabela));
+		Map<Integer, Map<String, String>> resultado = new HashMap<Integer, Map<String, String>>();
+		for (String[] row : df.values.values())
+			if (row[df.columnsMap.get(coluna)].matches(".*" + q + ".*")) { 
+				Map<String, String> bd = new HashMap<String, String>();
+				for (int i = 0; i < df.countCols(); i++)
+					bd.put(df.columns[i], row[i]);
+				resultado.put(resultado.size(), bd);
 			}
-			
-			return Integer.parseInt(lastId) + 1;
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} 
 		
-		return 0;
+		return resultado;
+	}
+	
+	private int autoIncrement(DataFrame df) {
+		int id = -1;
+		for (int key : df.values.keySet())
+			if (key > id)
+				id = key;
+		return id + 1;
 	}
 	
 	private String getPath(String tabela) {
-		return "database/" + tabela + ".csv";
+		return path + tabela + ".csv";
 	}
 	
 	

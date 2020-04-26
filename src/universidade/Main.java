@@ -1,51 +1,52 @@
 package universidade;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+
+class Mapa{
+	private Map<Integer, String> values = new HashMap<Integer, String>();
+		
+	public void printMap() {
+		
+		String s = "";
+		for (String folder : values.values())
+			s = s + " -> " + folder;
+		System.out.println("\n\n" + s.substring(4, s.length()));
+		System.out.println("--------------------------------------------------------------------------------");	
+	}
+
+	public void addMap(String q) {
+		values.put(values.size(), q);
+	}
+	
+	public void backMap() {
+		values.remove(values.size() - 1);
+	}
+}
+
 public class Main {
 	
+	private static Database db = new Database("database/");
+	private static Mapa map = new Mapa();
+	
 	public static void main(String args[]) {
-		
-		Database db = new Database();
-			
-		System.out.println("------ Pesquisando Aluno com ID igual a 100 ------");
-		db.searchAlunoById("100").imprimirDados();
-		System.out.println("\n------ Pesquisando Aluno com nome igual a João Lucas ------");
-		imprimirLista(db.searchAlunoByNome("João Lucas"));	
-		
-		System.out.println("\n------ Pesquisando Curso com ID igual a 5 ------");
-		db.searchCursoById("5").imprimirDados();
-		System.out.println("\n------ Pesquisando Curso com nome igual a Ciência ------");
-		imprimirLista(db.searchCursoByNome("Ciência"));
-		
-		System.out.println("\n------ Pesquisando Disicplina com ID igual a 5 ------");
-		db.searchDisciplinaById("66").imprimirDados();
-		System.out.println("\n------ Pesquisando Disicplina com nome igual a Geoprocessamento ------");
-		imprimirLista(db.searchDisciplinaByNome("Geoprocessamento"));
-
-		System.out.println("\n------ Pesquisando Nota com ID igual a 365 ------");
-		db.searchNotaById("365").imprimirDados();
 				
+		String[][] opcoes = {{"Pesquisar", "menuPesquisar", ""},
+						{"Ver cursos disponíveis", "cursos", ""},
+						{"Portal Aluno", "portalAluno", ""},
+						{"Sair", "sair", ""}};
 
-		System.out.println("\n---------- Inserindo um aluno no BD ----------");
-		System.out.println(db.insert("aluno", "Alan Turing,5"));
-		
-		System.out.println("\n------ Pesquisando Aluno com nome igual a Alan Turing ------");
-		imprimirLista(db.searchAlunoByNome("Alan Turing"));
-		
-		System.out.println("\n---------- Alterando o curso do Aluno Id 700 ----------");
-		System.out.println(db.alter("aluno", 700, "Alan Turing,10"));
-		
-		System.out.println("\n------ Pesquisando Aluno com nome igual a Alan Turing ------");
-		imprimirLista(db.searchAlunoByNome("Alan Turing"));
-
-		System.out.println("\n---------- Deletando dados do Aluno de id 700 ----------");
-		System.out.println(db.delete("aluno", 700));
-
-		System.out.println("\n------ Pesquisando Aluno com nome igual a Alan Turing ------");
-		imprimirLista(db.searchAlunoByNome("Alan Turing"));
-		
-		System.out.println("\n");
+		Menu menuPrincipal = new Menu(opcoes, true);
+	
 			
-						
+		map.addMap("Menu Principal");
+		while(true) {
+			map.printMap();
+			menuPrincipal.print();
+		}
+					
 	}
 	
 	public static void imprimirLista(Tabela[] alunos) {
@@ -58,4 +59,87 @@ public class Main {
 			}
 		}
 	}
+	
+	public static void menuPesquisar() {
+		
+		String txt = "Escolha o que deseja pesquisar";
+		String[][] opcoes = {{"Aluno", "pesquisar", "aluno"},
+				{"Curso", "pesquisar", "curso"},
+				{"Disciplina", "pesquisar", "disciplina"},
+				{"Voltar", "voltar"}};	
+		
+		Menu menu = new Menu(opcoes, txt);
+		map.addMap("Pesquisa");
+		map.printMap();
+		menu.print();
+		map.backMap();
+	}
+
+	public static void pesquisar(String tabela){
+		System.out.print("\nDigite o nome do " + tabela + ": ");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String q = null;
+		try{
+			q = br.readLine();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+				
+		Tabela[] tabelas;
+		if (tabela == "aluno")
+			tabelas = db.searchAlunoByNome(q);
+		else if (tabela == "curso")
+			tabelas = db.searchCursoByNome(q);
+		else
+			tabelas = db.searchDisciplinaByNome(q);	
+		
+		if (tabelas.length > 0) {
+			String txt = "Escolha um aluno";
+			String[][] opcoes = new String[tabelas.length][2];
+			int i = 0;
+			for(Tabela row : tabelas) {
+				opcoes[i] =  new String[]{row.getNome(), "portal_" + tabela, Integer.toString(row.getId())};
+				i++;
+			}
+			Menu menu = new Menu(opcoes, txt);
+			
+			map.addMap("Resultados");
+			map.printMap();
+			menu.print();
+			map.backMap();
+		}else {
+			System.out.println("\nNenhum aluno encontrado!!!");
+		}
+	}
+
+	public static void notasAluno(String id) {
+		for (Nota nota : db.searchNotaByAlunoId(Integer.parseInt(id))) {
+			nota.imprimirDados();
+			System.out.println("__________\n");
+		}
+	}
+	
+	public static void portal_aluno(String id) {
+		Aluno aluno = db.searchAlunoById(Integer.parseInt(id));
+		String txt = aluno.getNome() + " - " + aluno.curso.getNome();
+		String[][] opcoes = {{"Notas", "notasAluno", id},
+							{"Alterar Cadastro", ""},
+							{"Voltar", ""}};
+		Menu menu = new Menu(opcoes, txt);
+		
+		map.addMap("Portal Aluno");
+		map.printMap();
+		menu.print();
+		map.backMap();
+	}
+	
+
+	public static void voltar() {
+		
+	}
+	
+	public static void sair() {
+		System.exit(0);
+	}
+
 }

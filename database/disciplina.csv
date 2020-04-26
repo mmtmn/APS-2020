@@ -4,7 +4,7 @@ cod_disciplina,nome,cod_curso
 2,Introdução ao Agronegócio,0
 3,Produção Animal I,0
 4,Produção Vegetal I,0
-5,"Sociedade, Conhecimento e Cultura",0
+5,Sociedade Conhecimento e Cultura,0
 6,Administração e Estratégia,0
 7,Construção do Conhecimento Científico,0
 8,Matemática Aplicada,0
@@ -32,7 +32,7 @@ cod_disciplina,nome,cod_curso
 30,Introdução ao Agronegócio,1
 31,Produção Animal I,1
 32,Produção Vegetal I,1
-33,"Sociedade, Conhecimento e Cultura",1
+33,Sociedade Conhecimento e Cultura,1
 34,Administração e Estratégia,1
 35,Construção do Conhecimento Científico,1
 36,Matemática Aplicada,1
@@ -60,7 +60,7 @@ cod_disciplina,nome,cod_curso
 58,Introdução ao Agronegócio,2
 59,Produção Animal I,2
 60,Produção Vegetal I,2
-61,"Sociedade, Conhecimento e Cultura",2
+61,Sociedade Conhecimento e Cultura,2
 62,Administração e Estratégia,2
 63,Construção do Conhecimento Científico,2
 64,Matemática Aplicada,2
@@ -88,7 +88,7 @@ cod_disciplina,nome,cod_curso
 86,Introdução ao Agronegócio,3
 87,Produção Animal I,3
 88,Produção Vegetal I,3
-89,"Sociedade, Conhecimento e Cultura",3
+89,Sociedade Conhecimento e Cultura,3
 90,Administração e Estratégia,3
 91,Construção do Conhecimento Científico,3
 92,Matemática Aplicada,3
@@ -116,7 +116,7 @@ cod_disciplina,nome,cod_curso
 114,Introdução ao Agronegócio,4
 115,Produção Animal I,4
 116,Produção Vegetal I,4
-117,"Sociedade, Conhecimento e Cultura",4
+117,Sociedade Conhecimento e Cultura,4
 118,Administração e Estratégia,4
 119,Construção do Conhecimento Científico,4
 120,Matemática Aplicada,4
@@ -144,7 +144,7 @@ cod_disciplina,nome,cod_curso
 142,Introdução ao Agronegócio,5
 143,Produção Animal I,5
 144,Produção Vegetal I,5
-145,"Sociedade, Conhecimento e Cultura",5
+145,Sociedade Conhecimento e Cultura,5
 146,Administração e Estratégia,5
 147,Construção do Conhecimento Científico,5
 148,Matemática Aplicada,5
@@ -172,7 +172,7 @@ cod_disciplina,nome,cod_curso
 170,Introdução ao Agronegócio,6
 171,Produção Animal I,6
 172,Produção Vegetal I,6
-173,"Sociedade, Conhecimento e Cultura",6
+173,Sociedade Conhecimento e Cultura,6
 174,Administração e Estratégia,6
 175,Construção do Conhecimento Científico,6
 176,Matemática Aplicada,6
@@ -200,7 +200,7 @@ cod_disciplina,nome,cod_curso
 198,Introdução ao Agronegócio,7
 199,Produção Animal I,7
 200,Produção Vegetal I,7
-201,"Sociedade, Conhecimento e Cultura",7
+201,Sociedade Conhecimento e Cultura,7
 202,Administração e Estratégia,7
 203,Construção do Conhecimento Científico,7
 204,Matemática Aplicada,7
@@ -228,7 +228,7 @@ cod_disciplina,nome,cod_curso
 226,Introdução ao Agronegócio,8
 227,Produção Animal I,8
 228,Produção Vegetal I,8
-229,"Sociedade, Conhecimento e Cultura",8
+229,Sociedade Conhecimento e Cultura,8
 230,Administração e Estratégia,8
 231,Construção do Conhecimento Científico,8
 232,Matemática Aplicada,8
@@ -256,7 +256,7 @@ cod_disciplina,nome,cod_curso
 254,Introdução ao Agronegócio,9
 255,Produção Animal I,9
 256,Produção Vegetal I,9
-257,"Sociedade, Conhecimento e Cultura",9
+257,Sociedade Conhecimento e Cultura,9
 258,Administração e Estratégia,9
 259,Construção do Conhecimento Científico,9
 260,Matemática Aplicada,9
@@ -284,7 +284,7 @@ cod_disciplina,nome,cod_curso
 282,Introdução ao Agronegócio,10
 283,Produção Animal I,10
 284,Produção Vegetal I,10
-285,"Sociedade, Conhecimento e Cultura",10
+285,Sociedade Conhecimento e Cultura,10
 286,Administração e Estratégia,10
 287,Construção do Conhecimento Científico,10
 288,Matemática Aplicada,10
@@ -312,7 +312,7 @@ cod_disciplina,nome,cod_curso
 310,Introdução ao Agronegócio,11
 311,Produção Animal I,11
 312,Produção Vegetal I,11
-313,"Sociedade, Conhecimento e Cultura",11
+313,Sociedade Conhecimento e Cultura,11
 314,Administração e Estratégia,11
 315,Construção do Conhecimento Científico,11
 316,Matemática Aplicada,11
@@ -340,7 +340,7 @@ cod_disciplina,nome,cod_curso
 338,Introdução ao Agronegócio,12
 339,Produção Animal I,12
 340,Produção Vegetal I,12
-341,"Sociedade, Conhecimento e Cultura",12
+341,Sociedade Conhecimento e Cultura,12
 342,Administração e Estratégia,12
 343,Construção do Conhecimento Científico,12
 344,Matemática Aplicada,12
@@ -368,7 +368,7 @@ cod_disciplina,nome,cod_curso
 366,Introdução ao Agronegócio,13
 367,Produção Animal I,13
 368,Produção Vegetal I,13
-369,"Sociedade, Conhecimento e Cultura",13
+369,Sociedade Conhecimento e Cultura,13
 370,Administração e Estratégia,13
 371,Construção do Conhecimento Científico,13
 372,Matemática Aplicada,13
@@ -396,7 +396,7 @@ cod_disciplina,nome,cod_curso
 394,Introdução ao Agronegócio,14
 395,Produção Animal I,14
 396,Produção Vegetal I,14
-397,"Sociedade, Conhecimento e Cultura",14
+397,Sociedade Conhecimento e Cultura,14
 398,Administração e Estratégia,14
 399,Construção do Conhecimento Científico,14
 400,Matemática Aplicada,14
@@ -424,7 +424,7 @@ cod_disciplina,nome,cod_curso
 422,Introdução ao Agronegócio,15
 423,Produção Animal I,15
 424,Produção Vegetal I,15
-425,"Sociedade, Conhecimento e Cultura",15
+425,Sociedade Conhecimento e Cultura,15
 426,Administração e Estratégia,15
 427,Construção do Conhecimento Científico,15
 428,Matemática Aplicada,15
@@ -452,7 +452,7 @@ cod_disciplina,nome,cod_curso
 450,Introdução ao Agronegócio,16
 451,Produção Animal I,16
 452,Produção Vegetal I,16
-453,"Sociedade, Conhecimento e Cultura",16
+453,Sociedade Conhecimento e Cultura,16
 454,Administração e Estratégia,16
 455,Construção do Conhecimento Científico,16
 456,Matemática Aplicada,16
@@ -480,7 +480,7 @@ cod_disciplina,nome,cod_curso
 478,Introdução ao Agronegócio,17
 479,Produção Animal I,17
 480,Produção Vegetal I,17
-481,"Sociedade, Conhecimento e Cultura",17
+481,Sociedade Conhecimento e Cultura,17
 482,Administração e Estratégia,17
 483,Construção do Conhecimento Científico,17
 484,Matemática Aplicada,17
@@ -508,7 +508,7 @@ cod_disciplina,nome,cod_curso
 506,Introdução ao Agronegócio,18
 507,Produção Animal I,18
 508,Produção Vegetal I,18
-509,"Sociedade, Conhecimento e Cultura",18
+509,Sociedade Conhecimento e Cultura,18
 510,Administração e Estratégia,18
 511,Construção do Conhecimento Científico,18
 512,Matemática Aplicada,18
@@ -536,7 +536,7 @@ cod_disciplina,nome,cod_curso
 534,Introdução ao Agronegócio,19
 535,Produção Animal I,19
 536,Produção Vegetal I,19
-537,"Sociedade, Conhecimento e Cultura",19
+537,Sociedade Conhecimento e Cultura,19
 538,Administração e Estratégia,19
 539,Construção do Conhecimento Científico,19
 540,Matemática Aplicada,19
@@ -564,7 +564,7 @@ cod_disciplina,nome,cod_curso
 562,Introdução ao Agronegócio,20
 563,Produção Animal I,20
 564,Produção Vegetal I,20
-565,"Sociedade, Conhecimento e Cultura",20
+565,Sociedade Conhecimento e Cultura,20
 566,Administração e Estratégia,20
 567,Construção do Conhecimento Científico,20
 568,Matemática Aplicada,20
@@ -592,7 +592,7 @@ cod_disciplina,nome,cod_curso
 590,Introdução ao Agronegócio,21
 591,Produção Animal I,21
 592,Produção Vegetal I,21
-593,"Sociedade, Conhecimento e Cultura",21
+593,Sociedade Conhecimento e Cultura,21
 594,Administração e Estratégia,21
 595,Construção do Conhecimento Científico,21
 596,Matemática Aplicada,21
@@ -620,7 +620,7 @@ cod_disciplina,nome,cod_curso
 618,Introdução ao Agronegócio,22
 619,Produção Animal I,22
 620,Produção Vegetal I,22
-621,"Sociedade, Conhecimento e Cultura",22
+621,Sociedade Conhecimento e Cultura,22
 622,Administração e Estratégia,22
 623,Construção do Conhecimento Científico,22
 624,Matemática Aplicada,22
@@ -648,7 +648,7 @@ cod_disciplina,nome,cod_curso
 646,Introdução ao Agronegócio,23
 647,Produção Animal I,23
 648,Produção Vegetal I,23
-649,"Sociedade, Conhecimento e Cultura",23
+649,Sociedade Conhecimento e Cultura,23
 650,Administração e Estratégia,23
 651,Construção do Conhecimento Científico,23
 652,Matemática Aplicada,23
@@ -676,7 +676,7 @@ cod_disciplina,nome,cod_curso
 674,Introdução ao Agronegócio,24
 675,Produção Animal I,24
 676,Produção Vegetal I,24
-677,"Sociedade, Conhecimento e Cultura",24
+677,Sociedade Conhecimento e Cultura,24
 678,Administração e Estratégia,24
 679,Construção do Conhecimento Científico,24
 680,Matemática Aplicada,24
@@ -704,7 +704,7 @@ cod_disciplina,nome,cod_curso
 702,Introdução ao Agronegócio,25
 703,Produção Animal I,25
 704,Produção Vegetal I,25
-705,"Sociedade, Conhecimento e Cultura",25
+705,Sociedade Conhecimento e Cultura,25
 706,Administração e Estratégia,25
 707,Construção do Conhecimento Científico,25
 708,Matemática Aplicada,25
@@ -732,7 +732,7 @@ cod_disciplina,nome,cod_curso
 730,Introdução ao Agronegócio,26
 731,Produção Animal I,26
 732,Produção Vegetal I,26
-733,"Sociedade, Conhecimento e Cultura",26
+733,Sociedade Conhecimento e Cultura,26
 734,Administração e Estratégia,26
 735,Construção do Conhecimento Científico,26
 736,Matemática Aplicada,26
@@ -760,7 +760,7 @@ cod_disciplina,nome,cod_curso
 758,Introdução ao Agronegócio,27
 759,Produção Animal I,27
 760,Produção Vegetal I,27
-761,"Sociedade, Conhecimento e Cultura",27
+761,Sociedade Conhecimento e Cultura,27
 762,Administração e Estratégia,27
 763,Construção do Conhecimento Científico,27
 764,Matemática Aplicada,27
@@ -788,7 +788,7 @@ cod_disciplina,nome,cod_curso
 786,Introdução ao Agronegócio,28
 787,Produção Animal I,28
 788,Produção Vegetal I,28
-789,"Sociedade, Conhecimento e Cultura",28
+789,Sociedade Conhecimento e Cultura,28
 790,Administração e Estratégia,28
 791,Construção do Conhecimento Científico,28
 792,Matemática Aplicada,28
@@ -816,7 +816,7 @@ cod_disciplina,nome,cod_curso
 814,Introdução ao Agronegócio,29
 815,Produção Animal I,29
 816,Produção Vegetal I,29
-817,"Sociedade, Conhecimento e Cultura",29
+817,Sociedade Conhecimento e Cultura,29
 818,Administração e Estratégia,29
 819,Construção do Conhecimento Científico,29
 820,Matemática Aplicada,29
@@ -844,7 +844,7 @@ cod_disciplina,nome,cod_curso
 842,Introdução ao Agronegócio,30
 843,Produção Animal I,30
 844,Produção Vegetal I,30
-845,"Sociedade, Conhecimento e Cultura",30
+845,Sociedade Conhecimento e Cultura,30
 846,Administração e Estratégia,30
 847,Construção do Conhecimento Científico,30
 848,Matemática Aplicada,30
@@ -872,7 +872,7 @@ cod_disciplina,nome,cod_curso
 870,Introdução ao Agronegócio,31
 871,Produção Animal I,31
 872,Produção Vegetal I,31
-873,"Sociedade, Conhecimento e Cultura",31
+873,Sociedade Conhecimento e Cultura,31
 874,Administração e Estratégia,31
 875,Construção do Conhecimento Científico,31
 876,Matemática Aplicada,31
@@ -900,7 +900,7 @@ cod_disciplina,nome,cod_curso
 898,Introdução ao Agronegócio,32
 899,Produção Animal I,32
 900,Produção Vegetal I,32
-901,"Sociedade, Conhecimento e Cultura",32
+901,Sociedade Conhecimento e Cultura,32
 902,Administração e Estratégia,32
 903,Construção do Conhecimento Científico,32
 904,Matemática Aplicada,32
@@ -928,7 +928,7 @@ cod_disciplina,nome,cod_curso
 926,Introdução ao Agronegócio,33
 927,Produção Animal I,33
 928,Produção Vegetal I,33
-929,"Sociedade, Conhecimento e Cultura",33
+929,Sociedade Conhecimento e Cultura,33
 930,Administração e Estratégia,33
 931,Construção do Conhecimento Científico,33
 932,Matemática Aplicada,33
@@ -956,7 +956,7 @@ cod_disciplina,nome,cod_curso
 954,Introdução ao Agronegócio,34
 955,Produção Animal I,34
 956,Produção Vegetal I,34
-957,"Sociedade, Conhecimento e Cultura",34
+957,Sociedade Conhecimento e Cultura,34
 958,Administração e Estratégia,34
 959,Construção do Conhecimento Científico,34
 960,Matemática Aplicada,34
@@ -984,7 +984,7 @@ cod_disciplina,nome,cod_curso
 982,Introdução ao Agronegócio,35
 983,Produção Animal I,35
 984,Produção Vegetal I,35
-985,"Sociedade, Conhecimento e Cultura",35
+985,Sociedade Conhecimento e Cultura,35
 986,Administração e Estratégia,35
 987,Construção do Conhecimento Científico,35
 988,Matemática Aplicada,35
@@ -1012,7 +1012,7 @@ cod_disciplina,nome,cod_curso
 1010,Introdução ao Agronegócio,36
 1011,Produção Animal I,36
 1012,Produção Vegetal I,36
-1013,"Sociedade, Conhecimento e Cultura",36
+1013,Sociedade Conhecimento e Cultura,36
 1014,Administração e Estratégia,36
 1015,Construção do Conhecimento Científico,36
 1016,Matemática Aplicada,36
@@ -1040,7 +1040,7 @@ cod_disciplina,nome,cod_curso
 1038,Introdução ao Agronegócio,37
 1039,Produção Animal I,37
 1040,Produção Vegetal I,37
-1041,"Sociedade, Conhecimento e Cultura",37
+1041,Sociedade Conhecimento e Cultura,37
 1042,Administração e Estratégia,37
 1043,Construção do Conhecimento Científico,37
 1044,Matemática Aplicada,37
@@ -1068,7 +1068,7 @@ cod_disciplina,nome,cod_curso
 1066,Introdução ao Agronegócio,38
 1067,Produção Animal I,38
 1068,Produção Vegetal I,38
-1069,"Sociedade, Conhecimento e Cultura",38
+1069,Sociedade Conhecimento e Cultura,38
 1070,Administração e Estratégia,38
 1071,Construção do Conhecimento Científico,38
 1072,Matemática Aplicada,38
@@ -1096,7 +1096,7 @@ cod_disciplina,nome,cod_curso
 1094,Introdução ao Agronegócio,39
 1095,Produção Animal I,39
 1096,Produção Vegetal I,39
-1097,"Sociedade, Conhecimento e Cultura",39
+1097,Sociedade Conhecimento e Cultura,39
 1098,Administração e Estratégia,39
 1099,Construção do Conhecimento Científico,39
 1100,Matemática Aplicada,39
@@ -1124,7 +1124,7 @@ cod_disciplina,nome,cod_curso
 1122,Introdução ao Agronegócio,40
 1123,Produção Animal I,40
 1124,Produção Vegetal I,40
-1125,"Sociedade, Conhecimento e Cultura",40
+1125,Sociedade Conhecimento e Cultura,40
 1126,Administração e Estratégia,40
 1127,Construção do Conhecimento Científico,40
 1128,Matemática Aplicada,40
@@ -1152,7 +1152,7 @@ cod_disciplina,nome,cod_curso
 1150,Introdução ao Agronegócio,41
 1151,Produção Animal I,41
 1152,Produção Vegetal I,41
-1153,"Sociedade, Conhecimento e Cultura",41
+1153,Sociedade Conhecimento e Cultura,41
 1154,Administração e Estratégia,41
 1155,Construção do Conhecimento Científico,41
 1156,Matemática Aplicada,41
@@ -1180,7 +1180,7 @@ cod_disciplina,nome,cod_curso
 1178,Introdução ao Agronegócio,42
 1179,Produção Animal I,42
 1180,Produção Vegetal I,42
-1181,"Sociedade, Conhecimento e Cultura",42
+1181,Sociedade Conhecimento e Cultura,42
 1182,Administração e Estratégia,42
 1183,Construção do Conhecimento Científico,42
 1184,Matemática Aplicada,42
