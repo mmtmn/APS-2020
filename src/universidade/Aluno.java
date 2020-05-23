@@ -1,19 +1,28 @@
 package universidade;
 
-public class Aluno extends Tabela {
+public class Aluno {
+	private String id;
+	private String nome;
 	
-	Curso curso;
-	
-	
-	public Aluno(int id, String nome, Curso curso) {
-		super(id, nome);
-		this.curso = curso;
+	public Aluno(String id, String nome) {
+		this.setId(id);
+		this.setNome(nome);
+
+	}
+	public String getId() {
+		return id;
 	}
 
-	public void imprimirDados() {
-		System.out.println("Id do aluno: " + this.getId());
-		System.out.println("Nome: " + this.getNome());
-		System.out.println("Curso: " + this.curso.getNome());
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 }

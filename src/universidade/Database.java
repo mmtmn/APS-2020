@@ -1,152 +1,170 @@
 package universidade;
+import crudcsv.CrudCSV;
+
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-import java.util.HashMap;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.Map;
 
 public class Database {
 	
-	public Database() {
-		
+	private String path;
+	
+	public Database(String path) {
+		this.path = path;
+	}
+
+	public boolean insertAluno(String nome) {
+		CrudCSV crud = new CrudCSV(path + "alunos.csv");
+		if(crud.insert(new String[] {nome})) {
+			return true;
+		}
+		return false;
+	}
+	
+	
+	public boolean insertCurso(String nome, String nivel, String ano) {
+		CrudCSV crud = new CrudCSV(path + "cursos.csv");
+		if (create(nome+"_"+nivel+"_"+ano, "id,id_do_aluno,nota_NP1,nota_NP2,nota_reposicao,nota_exame,media,aprovado")) {
+			if(crud.insert(new String[] {nome, nivel, ano})){
+				return true;
+			}	
+		} else {
+			System.out.println("\nErro! Curso já está cadastrado!!!");
+		}
+		return false;
 	}
 
 	public Aluno searchAlunoById(String q) {
-		Map<Integer, String[]> dados = search("aluno", "cod_aluno", q);
+		CrudCSV crud = new CrudCSV(path + "alunos.csv");
+		Map<Integer, String[]> dados = crud.search("id", q);
 		String[] row = dados.get(0);
-		return new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
-		
+		return new Aluno(row[0], row[1]);
 	}
 	
+
+	public Curso searchCursoById(String q) {
+		CrudCSV crud = new CrudCSV(path + "cursos.csv");
+		Map<Integer, String[]> dados = crud.search("id", q);
+		String[] row = dados.get(0);
+		return new Curso(Integer.parseInt(row[0]), row[1], row[2], Integer.parseInt(row[3]));
+	}
+	
+
 	public Aluno[] searchAlunoByNome(String q) {
-		Map<Integer, String[]> dados = search("aluno", "nome", q);
-		Aluno[] alunos = new Aluno[dados.size()] ;
-		
+		CrudCSV crud = new CrudCSV(path + "alunos.csv");
+		Map<Integer, String[]> dados = crud.search("nome", ".*" + q + ".*");
+		Aluno[] alunos = new Aluno[dados.size()];
 		for (int i = 0; i < dados.size(); i++) {
 			String[] row = dados.get(i); 
-			alunos[i] = new Aluno(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
+			alunos[i] = new Aluno(row[0], row[1]);
 		}
 		return alunos;
-		
 	}
 	
-	public Disciplina searchDisciplinaById(String q) {
-		Map<Integer, String[]> dados = search("disciplina", "cod_disciplina", q);
-		String[] row = dados.get(0);
-		return new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
-		
-	}
-	
-	public Disciplina[] searchDisciplinaByNome(String q) {
-		Map<Integer, String[]> dados = search("disciplina", "nome", q);
-		Disciplina[] disciplinas = new Disciplina[dados.size()] ;
-		
-		for (int i = 0; i < dados.size(); i++) {
-			String[] row = dados.get(i); 
-			disciplinas[i] = new Disciplina(Integer.parseInt(row[0]), row[1], searchCursoById(row[2]));
-		}
-		return disciplinas;
-		
-	}
-	
+
 	public Curso[] searchCursoByNome(String q) {
-		Map<Integer, String[]> dados = search("curso", "nome", q);
-		Curso[] cursos = new Curso[dados.size()] ;
-		
+		CrudCSV crud = new CrudCSV(path + "cursos.csv");
+		Map<Integer, String[]> dados = crud.search("nome", ".*" + q + ".*");
+		Curso[] cursos = new Curso[dados.size()];
 		for (int i = 0; i < dados.size(); i++) {
 			String[] row = dados.get(i); 
-			cursos[i] = new Curso(Integer.parseInt(row[0]), row[1], row[2]);
+			cursos[i] = new Curso(Integer.parseInt(row[0]), row[1], row[2], Integer.parseInt(row[3]));
 		}
 		return cursos;
 	}
+	
+	public void getHistorico(String id_aluno) {
+		CrudCSV alunos_cursos = new CrudCSV(path + "alunos_cursos.csv");
+		Map<Integer, String[]> dados = alunos_cursos.search("id_aluno", id_aluno);
+		for (String[] row : dados.values()) {
+			System.out.println("\n----------------\n" + row[2]);
+			Rendimento rendimento = new Rendimento(new CrudCSV(path + row[2] + ".csv").search("id_do_aluno", id_aluno).get(0));
+			rendimento.print();
+		}
+	}
+	
+	public Rendimento lancarNota(String cod_aluno, String curso, float np1, float np2, float reposicao, float exame) {
+		String nivel = curso.split("_")[1];
+		String aprovado = "";
+		float mediaFinal = 0;
+		float minMedia = (nivel == "GRADUACAO") ? 7 : 5;
+		
+	    if (reposicao > np1) np1 = reposicao;
+	    else if (reposicao > np2) np2 = reposicao;
+	    
+	    float primeiraMedia = (np1 + np2) / 2;
+	    float mediaExame = (primeiraMedia + exame) / 2;
+	    
+	    if ((primeiraMedia >= minMedia) || (mediaExame >= 5)) {
+	    	mediaFinal = primeiraMedia;
+	    	aprovado = "Aprovado";
+	    }
+	    else {
+	        mediaFinal = mediaExame;
+	    	aprovado = "Reprovado";	
+	    }
+	    
+	    String[] arr = {cod_aluno,
+	    				Float.toString(np1),
+	    				Float.toString(np2),
+	    				Float.toString(reposicao),
+	    				Float.toString(exame),
+	    				Float.toString(mediaFinal),
+	    				aprovado};
+	    
+	    	    	
 
-	public Curso searchCursoById(String q) {
-		Map<Integer, String[]> dados = search("curso", "cod_curso", q);
-		String[] row = dados.get(0);
-		return new Curso(Integer.parseInt(row[0]), row[1], row[2]);
-		
-	}
-	
-	public Nota searchNotaById(String q) {
-		Map<Integer, String[]> dados = search("nota", "cod_nota", q);
-		String[] row = dados.get(0);
-		return (new Nota(Integer.parseInt(row[0]), 
-				Double.parseDouble(row[1]),
-				Double.parseDouble(row[2]),
-				Double.parseDouble(row[3]),
-				Integer.parseInt(row[4]),
-				Integer.parseInt(row[5]),
-				searchDisciplinaById(row[6]),
-				searchAlunoById(row[7])));
-	}
-		
-	public Boolean insert(String tabela, String q) {
-		
-		DataFrame df = new DataFrame(getPath(tabela));
-		
-		String [] arr = q.split(",");
-		int id = autoIncrement(tabela);
-				
-		if (df.countCols() == arr.length+1) {
-			df.values.put(id, (id + "," + q).split(","));
-			return df.to_csv(getPath(tabela));
-		}	
-		return false;
-		
-	}
-	
-	public Boolean alter(String tabela, int id, String q) {
-		return (delete(tabela, id) && insert(tabela, q)) ? true : false;
-	}
-	
-	public Boolean delete(String tabela, int id) {
-		DataFrame df = new DataFrame(getPath(tabela));
-		
-		if(df.values.remove(id) == null)
-			return false;
-		return df.to_csv(getPath(tabela));
-		
-	}
-	
-	
-	private Map<Integer, String[]> search(String tabela, String coluna, String q) {
-									
-		DataFrame df = new DataFrame(getPath(tabela));
-		Map<Integer, String[]> resultados = new HashMap<Integer, String[]>();
-
-		for (String[] row : df.values.values())
-			if (row[df.columnsMap.get(coluna)].matches(".*" + q + ".*")) 
-				resultados.put(resultados.size(), row);		
-
-		return resultados;
-	}
-		
-	private int autoIncrement(String tabela) {
-
-		File file = new File(getPath(tabela));
-		
-		try (Scanner inputStream = new Scanner(file)) {
-					
-			String lastId = "-1";
-			inputStream.nextLine();
-			while (inputStream.hasNext()) {				
-				String[] dados = inputStream.nextLine().split(",");
-				if (Integer.parseInt(lastId) < Integer.parseInt(dados[0])) {
-					lastId = dados[0];
-				}
+		CrudCSV crud = new CrudCSV(path + curso + ".csv");
+		if(verificarSeNotaJaLancada(cod_aluno, curso)){
+			System.out.println("\nErro! O aluno já tem nota lançada para este curso e não pode ser alterada.");
+		}else {
+			if 	(crud.insert(arr)) {
+				CrudCSV crud2 = new CrudCSV(path + "alunos_cursos.csv");
+				String[] values = {cod_aluno, curso};
+				if(crud2.insert(values))
+					return new Rendimento(np1, np2, reposicao, exame, mediaFinal, aprovado);
 			}
-			
-			return Integer.parseInt(lastId) + 1;
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} 
+			System.out.println("\nErro Desconhecido ao lançar nota do aluno!!!\n\n");
+		}
+		return null;
+	}
+	
+	public void getRendimento(String curso) {
+		CrudCSV crud = new CrudCSV(path + curso + ".csv");
+		Map<Integer, String[]> dados = crud.search("id", ".*");
+				
+		for (String[] row : dados.values()) {
+			Rendimento rendimento = new Rendimento(row);
+			System.out.println("\n----------------\n" + searchAlunoById(row[1]).getNome());
+			rendimento.print();
+		}
+	}
+	
+	private boolean verificarSeNotaJaLancada(String cod_aluno, String curso) {
 		
-		return 0;
+		CrudCSV crud = new CrudCSV(path + "alunos_cursos.csv");
+		for (String[] r : crud.search("id_aluno", cod_aluno).values()) {
+			if (r[2].equals(curso))
+				return true;
+		}
+		return false;
 	}
 	
-	private String getPath(String tabela) {
-		return "database/" + tabela + ".csv";
+	private boolean create(String name, String cabecalho) {
+	    File file = new File(path + name + ".csv");
+	    try {
+		    if(file.createNewFile()){
+	            try(PrintWriter output = new PrintWriter(new FileWriter(path + name + ".csv",true))) {
+	                output.printf(cabecalho);
+	                return true;
+	            } 
+	            catch (Exception e) {}
+		    }else return false;
+	    }catch (Exception e) {
+	    	e.printStackTrace();
+	    }
+	    return false;
 	}
-	
 	
 }

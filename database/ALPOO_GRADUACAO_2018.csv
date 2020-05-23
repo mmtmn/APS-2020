@@ -1,0 +1,7 @@
+id,id_do_aluno,nota_NP1,nota_NP2,nota_reposicao,nota_exame,media,aprovado
+1,5,2,4,5.5,5.5,5.38,Aprovado
+2,4,10,3,5.5,5.7,7.75,Aprovado
+3,2,2,4,3.2,5.5,4.55,Reprovado
+4,3,9,8,5.2,0,8.5,Aprovado
+5,1,1,4,5.1,0,2.28,Reprovado
+
